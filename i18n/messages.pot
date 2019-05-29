@@ -1,0 +1,24 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2019-05-29T17:49:00.932Z\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"MIME-Version: 1.0\n"
+"X-Generator: react-intl-po\n"
+
+
+#: i18n/src/App.json
+#. [App.DocumentTitleTemplate] - Template for the HTML document title that will appears in the browser's tab.
+#. defaultMessage is:
+#. %s - CuraNu
+msgctxt "App.DocumentTitleTemplate"
+msgid "%s - CuraNu"
+msgstr ""
+
+#: i18n/src/App.json
+#. [App.DefaultDocumentTitle] - Default HTML document title that will appears in the browser's tab. This will be used when there is no specific HTML title for the current page, otherwise the "App.DocumentTitleTemplate" message will be used.
+#. defaultMessage is:
+#. CuraNu - Care and welfare
+msgctxt "App.DefaultDocumentTitle"
+msgid "CuraNu - Care and welfare"
+msgstr ""

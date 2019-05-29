@@ -1,0 +1,29 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2019-05-29T17:49:00.932Z\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"MIME-Version: 1.0\n"
+"X-Generator: Poedit 2.0.6\n"
+"Project-Id-Version: \n"
+"PO-Revision-Date: \n"
+"Language-Team: \n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: nl\n"
+
+#. [App.DocumentTitleTemplate] - Template for the HTML document title that will appears in the browser's tab.
+#. defaultMessage is:
+#. %s - CuraNu
+#: i18n/src/App.json
+msgctxt "App.DocumentTitleTemplate"
+msgid "%s - CuraNu"
+msgstr "%s - CuraNu"
+
+#. [App.DefaultDocumentTitle] - Default HTML document title that will appears in the browser's tab. This will be used when there is no specific HTML title for the current page, otherwise the "App.DocumentTitleTemplate" message will be used.
+#. defaultMessage is:
+#. CuraNu - Care and welfare
+#: i18n/src/App.json
+msgctxt "App.DefaultDocumentTitle"
+msgid "CuraNu - Care and welfare"
+msgstr "CuraNu - Zorg en welzijn"
