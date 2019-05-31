@@ -19,7 +19,17 @@ require('@babel/register')({
       },
     ],
   ],
-  plugins: ['react-loadable/babel', 'dynamic-import-node'],
+  plugins: [
+    'react-loadable/babel',
+    'dynamic-import-node',
+    [
+      'transform-assets',
+      {
+        extensions: ['svg'],
+        name: 'static/media/[name].[hash:8].[ext]',
+      },
+    ],
+  ],
 });
 console.log('Done!\n');
 
