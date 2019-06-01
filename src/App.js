@@ -27,7 +27,7 @@ const i18nMsg = defineMessages({
 });
 
 const AsyncPage = Loadable({
-  loader: () => import('./pages'),
+  loader: () => import('./pages/Home'),
   loading: Loading,
 });
 

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import InstitutionalMenu from './components/InstitutionalMenu';
-import ScreenSize from '../../components/devComponents/ScreenSize';
+import ScreenSize from '../../components/dev/ScreenSize';
 import Grid from '@material-ui/core/Grid';
 
 export class Home extends Component {
@@ -11,7 +11,6 @@ export class Home extends Component {
       <Grid container justify={'center'} {...other}>
         <Grid item xs={12} md={11} lg={10}>
           <InstitutionalMenu />
-          <br />
           <ScreenSize style={{ position: 'fixed', top: '300px', left: '30px' }} />
         </Grid>
       </Grid>
