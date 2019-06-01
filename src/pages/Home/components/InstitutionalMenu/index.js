@@ -6,7 +6,7 @@ import withWidth, { isWidthUp } from '@material-ui/core/withWidth/withWidth';
 import ListOfLinks from './components/ListOfLinks';
 import ListOfIcons from './components/ListOfIcons';
 
-export class InstitutionalMenu extends Component {
+class InstitutionalMenu extends Component {
   render() {
     const { width: screenWidth, ...other } = this.props;
 

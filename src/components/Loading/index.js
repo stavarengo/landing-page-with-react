@@ -22,7 +22,7 @@ import React, { Component } from 'react';
  * @see https://github.com/jamiebuilds/react-loadable
  * @see https://github.com/jamiebuilds/react-loadable#creating-a-great-loading-component
  */
-export class Loading extends Component {
+class Loading extends Component {
   /**
    * These properties were created according to the [react-loadable
    * documentation](https://github.com/jamiebuilds/react-loadable#creating-a-great-loading-component)

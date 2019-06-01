@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2019-06-01T21:12:09.923Z\n"
+"POT-Creation-Date: 2019-06-01T22:01:29.449Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -94,6 +94,14 @@ msgstr "Smoelenboek"
 msgctxt "Menu1"
 msgid "Groups"
 msgstr "Groepen"
+
+#. [Intranet]
+#. defaultMessage is:
+#. Intranet
+#: i18n/src/pages/Home/components/SectionBetweenInstitutionalMenuAndTheMainMenu/index.json
+msgctxt "Intranet"
+msgid "Intranet"
+msgstr "Intranet"
 
 #. [Menu5]
 #. defaultMessage is:

@@ -25,7 +25,7 @@ require('@babel/register')({
     [
       'transform-assets',
       {
-        extensions: ['svg'],
+        extensions: ['svg', 'png'],
         name: 'static/media/[name].[hash:8].[ext]',
       },
     ],

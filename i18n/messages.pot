@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2019-06-01T21:12:09.923Z\n"
+"POT-Creation-Date: 2019-06-01T22:01:29.449Z\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "MIME-Version: 1.0\n"
@@ -89,6 +89,14 @@ msgstr ""
 #. Groups
 msgctxt "Menu1"
 msgid "Groups"
+msgstr ""
+
+#: i18n/src/pages/Home/components/SectionBetweenInstitutionalMenuAndTheMainMenu/index.json
+#. [Intranet]
+#. defaultMessage is:
+#. Intranet
+msgctxt "Intranet"
+msgid "Intranet"
 msgstr ""
 
 #: i18n/src/pages/Home/components/InstitutionalMenu/components/ListOfLinks/index.json
