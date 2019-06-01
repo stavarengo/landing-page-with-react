@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2019-06-01T18:08:19.105Z\n"
+"POT-Creation-Date: 2019-06-01T21:12:09.923Z\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "MIME-Version: 1.0\n"
@@ -15,7 +15,7 @@ msgctxt "App.DocumentTitleTemplate"
 msgid "%s - CuraNu"
 msgstr ""
 
-#: i18n/src/components/InstitutionalMenu/components/ListOfLinks/index.json
+#: i18n/src/pages/Home/components/InstitutionalMenu/components/ListOfLinks/index.json
 #. [Menu6]
 #. defaultMessage is:
 #. About us
@@ -23,12 +23,40 @@ msgctxt "Menu6"
 msgid "About us"
 msgstr ""
 
-#: i18n/src/components/InstitutionalMenu/components/ListOfLinks/index.json
+#: i18n/src/components/companyLogo/LogoWithNameAndSlogan/index.json
+#. [companySlogan]
+#. defaultMessage is:
+#. Care and welfare
+#: i18n/src/components/companyLogo/LogoWithNameAndSlogan/index.json
+#. [companySlogan]
+#. defaultMessage is:
+#. Care and welfare
+msgctxt "companySlogan"
+msgid "Care and welfare"
+msgstr ""
+
+#: i18n/src/pages/Home/components/InstitutionalMenu/components/ListOfLinks/index.json
 #. [Menu2]
 #. defaultMessage is:
 #. Contact
 msgctxt "Menu2"
 msgid "Contact"
+msgstr ""
+
+#: i18n/src/components/companyLogo/LogoWithNameAndSlogan/index.json
+#. [companyName]
+#. defaultMessage is:
+#. CuraNu
+msgctxt "companyName"
+msgid "CuraNu"
+msgstr ""
+
+#: i18n/src/components/companyLogo/LogoWithoutNameAndSlogan/index.json
+#. [companyLogoAltText] - Text what will be shown in the "alt" attribute of the "IMG" element with the logo of the company.
+#. defaultMessage is:
+#. CuraNu
+msgctxt "companyLogoAltText"
+msgid "CuraNu"
 msgstr ""
 
 #: i18n/src/App.json
@@ -39,7 +67,7 @@ msgctxt "App.DefaultDocumentTitle"
 msgid "CuraNu - Care and welfare"
 msgstr ""
 
-#: i18n/src/components/InstitutionalMenu/components/ListOfLinks/index.json
+#: i18n/src/pages/Home/components/InstitutionalMenu/components/ListOfLinks/index.json
 #. [Menu3]
 #. defaultMessage is:
 #. FAQ
@@ -47,7 +75,7 @@ msgctxt "Menu3"
 msgid "FAQ"
 msgstr ""
 
-#: i18n/src/components/InstitutionalMenu/components/ListOfLinks/index.json
+#: i18n/src/pages/Home/components/InstitutionalMenu/components/ListOfLinks/index.json
 #. [Menu4]
 #. defaultMessage is:
 #. Facebook
@@ -55,7 +83,7 @@ msgctxt "Menu4"
 msgid "Facebook"
 msgstr ""
 
-#: i18n/src/components/InstitutionalMenu/components/ListOfLinks/index.json
+#: i18n/src/pages/Home/components/InstitutionalMenu/components/ListOfLinks/index.json
 #. [Menu1]
 #. defaultMessage is:
 #. Groups
@@ -63,7 +91,7 @@ msgctxt "Menu1"
 msgid "Groups"
 msgstr ""
 
-#: i18n/src/components/InstitutionalMenu/components/ListOfLinks/index.json
+#: i18n/src/pages/Home/components/InstitutionalMenu/components/ListOfLinks/index.json
 #. [Menu5]
 #. defaultMessage is:
 #. Microblog

@@ -3,6 +3,7 @@ import { withStyles } from '@material-ui/styles';
 import PropTypes from 'prop-types';
 import Avatar from '@material-ui/core/Avatar';
 import Badge from '@material-ui/core/Badge';
+import clsx from 'clsx';
 
 const styles = theme => ({
   root: {
@@ -40,12 +41,12 @@ class Icon extends Component {
   };
 
   render() {
-    const { classes, icon, badgeProps, ...other } = this.props;
+    const { classes, className, icon, badgeProps, ...other } = this.props;
 
     let badge = this.getBadge(<Avatar className={classes.avatar} src={icon} />, badgeProps);
 
     return (
-      <div className={classes.root} {...other}>
+      <div className={clsx(classes.root, className)} {...other}>
         {badge}
       </div>
     );
