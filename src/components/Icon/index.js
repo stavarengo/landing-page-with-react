@@ -44,7 +44,11 @@ class Icon extends Component {
 
     let badge = this.getBadge(<Avatar className={classes.avatar} src={icon} />, badgeProps);
 
-    return <div className={classes.root}>{badge}</div>;
+    return (
+      <div className={classes.root} {...other}>
+        {badge}
+      </div>
+    );
   }
 
   getBadge(icon, badgeProps) {

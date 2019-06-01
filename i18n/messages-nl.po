@@ -1,16 +1,16 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2019-05-29T17:49:00.932Z\n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2019-06-01T17:58:43.984Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"MIME-Version: 1.0\n"
 "X-Generator: Poedit 2.0.6\n"
-"Project-Id-Version: \n"
-"PO-Revision-Date: \n"
-"Language-Team: \n"
-"Last-Translator: \n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Language: nl\n"
 
 #. [App.DocumentTitleTemplate] - Template for the HTML document title that will appears in the browser's tab.
 #. defaultMessage is:
@@ -20,6 +20,22 @@ msgctxt "App.DocumentTitleTemplate"
 msgid "%s - CuraNu"
 msgstr "%s - CuraNu"
 
+#. [Menu6]
+#. defaultMessage is:
+#. About us
+#: i18n/src/components/InstitutionalMenu/components/ListOfLinks/index.json
+msgctxt "Menu6"
+msgid "About us"
+msgstr "Over ons"
+
+#. [Menu2]
+#. defaultMessage is:
+#. Contact
+#: i18n/src/components/InstitutionalMenu/components/ListOfLinks/index.json
+msgctxt "Menu2"
+msgid "Contact"
+msgstr "Contact"
+
 #. [App.DefaultDocumentTitle] - Default HTML document title that will appears in the browser's tab. This will be used when there is no specific HTML title for the current page, otherwise the "App.DocumentTitleTemplate" message will be used.
 #. defaultMessage is:
 #. CuraNu - Care and welfare
@@ -27,3 +43,35 @@ msgstr "%s - CuraNu"
 msgctxt "App.DefaultDocumentTitle"
 msgid "CuraNu - Care and welfare"
 msgstr "CuraNu - Zorg en welzijn"
+
+#. [Menu3]
+#. defaultMessage is:
+#. FAQ
+#: i18n/src/components/InstitutionalMenu/components/ListOfLinks/index.json
+msgctxt "Menu3"
+msgid "FAQ"
+msgstr "FAQ"
+
+#. [Menu4]
+#. defaultMessage is:
+#. Facebook
+#: i18n/src/components/InstitutionalMenu/components/ListOfLinks/index.json
+msgctxt "Menu4"
+msgid "Facebook"
+msgstr "Smoelenboek"
+
+#. [Menu1]
+#. defaultMessage is:
+#. Groups
+#: i18n/src/components/InstitutionalMenu/components/ListOfLinks/index.json
+msgctxt "Menu1"
+msgid "Groups"
+msgstr "Groepen"
+
+#. [Menu5]
+#. defaultMessage is:
+#. Microblog
+#: i18n/src/components/InstitutionalMenu/components/ListOfLinks/index.json
+msgctxt "Menu5"
+msgid "Microblog"
+msgstr "Microblog"

@@ -1,12 +1,12 @@
 import { createMuiTheme } from '@material-ui/core/styles';
-import purple from '@material-ui/core/colors/purple';
 
 const theme = createMuiTheme({
+  typography: {
+    fontFamily: "'Open Sans', sans-serif",
+  },
   palette: {
-    primary: {
-      light: purple[300],
-      main: purple[500],
-      dark: purple[700],
+    text: {
+      primary: '#657189',
     },
   },
 });

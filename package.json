@@ -21,6 +21,7 @@
   "scripts": {
     "postinstall": "node makeReactScriptGenerateBundleStatsAgain.js",
     "i18n:update-pot": "npm run extract:messages && npm run extract:pot",
+    "i18n:update-po": "find './i18n/' -name *.po -execdir sh -c 'msgmerge -vU \"$0\" \"$PWD/messages.pot\"' '{}' \\;",
     "extract:messages": "rm -rf i18n/src && MESSAGE_DIR='./i18n' react-scripts build",
     "extract:pot": "react-intl-po json2pot 'i18n/src/**/*.json' -c 'id' -o 'i18n/messages.pot'",
     "extract:po": "react-intl-po po2json 'i18n/**/*.po' -c 'id' -m 'i18n/src/**/*.json' -o 'i18n'",
