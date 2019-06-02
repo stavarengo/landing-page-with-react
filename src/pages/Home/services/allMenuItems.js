@@ -13,61 +13,66 @@ const i18nMsg = defineMessages({
   MainMenuMenu4: { id: 'MainMenu.Menu4', defaultMessage: 'Quality manual' },
 });
 
+let allItems = null;
+
 export default function(intl) {
-  return {
-    institutionalMenu: [
-      {
-        label: intl.formatMessage(i18nMsg.InstitutionalMenu1),
-        icon: null,
-        href: '/contact',
-      },
-      {
-        label: intl.formatMessage(i18nMsg.InstitutionalMenu2),
-        icon: null,
-        href: '/',
-      },
-      {
-        label: intl.formatMessage(i18nMsg.InstitutionalMenu3),
-        icon: null,
-        href: '/',
-      },
-      {
-        label: intl.formatMessage(i18nMsg.InstitutionalMenu4),
-        icon: null,
-        href: '/',
-      },
-      {
-        label: intl.formatMessage(i18nMsg.InstitutionalMenu5),
-        icon: null,
-        href: '/',
-      },
-      {
-        label: intl.formatMessage(i18nMsg.InstitutionalMenu6),
-        icon: null,
-        href: '/',
-      },
-    ],
-    mainMenu: [
-      {
-        label: intl.formatMessage(i18nMsg.MainMenuMenu1),
-        icon: null,
-        href: '/',
-      },
-      {
-        label: intl.formatMessage(i18nMsg.MainMenuMenu2),
-        icon: null,
-        href: '/',
-      },
-      {
-        label: intl.formatMessage(i18nMsg.MainMenuMenu3),
-        icon: null,
-        href: '/',
-      },
-      {
-        label: intl.formatMessage(i18nMsg.MainMenuMenu4),
-        icon: null,
-        href: '/',
-      },
-    ],
-  };
+  if (!allItems) {
+    allItems = {
+      institutionalMenu: [
+        {
+          label: intl.formatMessage(i18nMsg.InstitutionalMenu1),
+          icon: null,
+          href: '/',
+        },
+        {
+          label: intl.formatMessage(i18nMsg.InstitutionalMenu2),
+          icon: null,
+          href: '/contact',
+        },
+        {
+          label: intl.formatMessage(i18nMsg.InstitutionalMenu3),
+          icon: null,
+          href: '/',
+        },
+        {
+          label: intl.formatMessage(i18nMsg.InstitutionalMenu4),
+          icon: null,
+          href: '/',
+        },
+        {
+          label: intl.formatMessage(i18nMsg.InstitutionalMenu5),
+          icon: null,
+          href: '/',
+        },
+        {
+          label: intl.formatMessage(i18nMsg.InstitutionalMenu6),
+          icon: null,
+          href: '/',
+        },
+      ],
+      mainMenu: [
+        {
+          label: intl.formatMessage(i18nMsg.MainMenuMenu1),
+          icon: null,
+          href: '/',
+        },
+        {
+          label: intl.formatMessage(i18nMsg.MainMenuMenu2),
+          icon: null,
+          href: '/',
+        },
+        {
+          label: intl.formatMessage(i18nMsg.MainMenuMenu3),
+          icon: null,
+          href: '/',
+        },
+        {
+          label: intl.formatMessage(i18nMsg.MainMenuMenu4),
+          icon: null,
+          href: '/',
+        },
+      ],
+    };
+  }
+  return allItems;
 }

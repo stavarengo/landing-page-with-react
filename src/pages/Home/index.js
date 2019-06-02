@@ -5,22 +5,33 @@ import Grid from '@material-ui/core/Grid';
 import SectionBetweenInstitutionalMenuAndTheMainMenu from './components/SectionBetweenInstitutionalMenuAndTheMainMenu';
 import MainMenu from './components/MainMenu';
 import Box from '@material-ui/core/Box';
+import DrawerMenu from './components/DrawerMenu';
+import { isWidthDown } from '@material-ui/core/withWidth';
+import withWidth from '@material-ui/core/withWidth';
 
 class Home extends Component {
+  state = {
+    isDrawerOpen: false,
+  };
   render() {
-    const { staticContext, ...other } = this.props;
+    const { staticContext, width: screenWidth, ...other } = this.props;
 
     const contentSize = { xs: 12, md: 11, lg: 10 };
+    const renderMenuSandwich = isWidthDown('sm', screenWidth);
 
     return (
       <Grid container justify={'center'} {...other}>
         <Grid item xs={12}>
           <ScreenSize style={{ position: 'fixed', top: '300px', left: '30px' }} />
 
+          {renderMenuSandwich && <DrawerMenu open={this.state.isDrawerOpen} onClose={this.onDrawerClose.bind(this)} />}
           <Grid container justify={'center'}>
             <Grid item {...contentSize}>
-              <InstitutionalMenu />
-              <Box my={3}>
+              <InstitutionalMenu
+                onSandwichMenuClick={this.onSandwichMenuClick.bind(this)}
+                renderMenuSandwich={renderMenuSandwich}
+              />
+              <Box my={3} px={1}>
                 <SectionBetweenInstitutionalMenuAndTheMainMenu />
               </Box>
             </Grid>
@@ -29,6 +40,7 @@ class Home extends Component {
         <Grid item xs={12}>
           <Box py={4} px={1} mt={1} clone>
             <MainMenu
+              renderListOfMenuItems={!renderMenuSandwich}
               contentItemProps={{
                 ...contentSize,
               }}
@@ -38,6 +50,18 @@ class Home extends Component {
       </Grid>
     );
   }
+
+  onSandwichMenuClick() {
+    this.setState({
+      isDrawerOpen: !this.state.isDrawerOpen,
+    });
+  }
+
+  onDrawerClose() {
+    this.setState({
+      isDrawerOpen: false,
+    });
+  }
 }
 
-export default Home;
+export default withWidth()(Home);

@@ -1,7 +1,7 @@
 import LinearProgress from '@material-ui/core/LinearProgress';
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
-import Typography from '@material-ui/core/Typography';
+import IconError from '@material-ui/icons/Error';
 
 /**
  * Offcorse you can use this component manually, but it was created to be used together with
@@ -87,13 +87,7 @@ class Loading extends Component {
     render = render || {};
 
     if (error) {
-      return render.error ? (
-        render.error()
-      ) : (
-        <Typography {...other} color={'error'}>
-          !
-        </Typography>
-      );
+      return render.error ? render.error() : <IconError {...other} color={'error'} />;
     } else if (timedOut) {
       return render.timedOut ? render.timedOut() : <LinearProgress {...other} color={'secondary'} />;
     } else if (pastDelay) {
