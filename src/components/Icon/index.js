@@ -37,7 +37,7 @@ class Icon extends Component {
      * Properties applied to the {@link Badge} element.
      * If null, no Badge will be rendered.
      */
-    badgeProps: Badge.propTypes,
+    badgeProps: PropTypes.object,
   };
 
   render() {

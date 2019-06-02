@@ -58,7 +58,6 @@ class SearchTextArea extends Component {
         placeholder={showDefaultPlaceholder ? intl.formatMessage(i18nMsg.Search) : null}
         InputProps={{
           classes,
-          disableUnderline: true,
           endAdornment: (
             <InputAdornment
               position={'end'}

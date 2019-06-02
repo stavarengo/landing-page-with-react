@@ -43,7 +43,7 @@ class LogoWithNameAndSlogan extends Component {
 
     return (
       <Grid container alignItems={'center'} {...other}>
-        <Grid item alignItems={'center'}>
+        <Grid item>
           <LogoWithoutNameAndSlogan className={classes.imgLogo} />
         </Grid>
         <Grid item>
@@ -55,8 +55,8 @@ class LogoWithNameAndSlogan extends Component {
               {intl
                 .formatMessage(i18nMsg.companyName)
                 .split('')
-                .map(letter => (
-                  <span>{letter}</span>
+                .map((letter, index) => (
+                  <span key={index}>{letter}</span>
                 ))}
             </Typography>
             <Typography className={classes.companySlogan}>

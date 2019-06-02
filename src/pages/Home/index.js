@@ -8,7 +8,7 @@ import Box from '@material-ui/core/Box';
 
 class Home extends Component {
   render() {
-    const { ...other } = this.props;
+    const { staticContext, ...other } = this.props;
 
     const contentSize = { xs: 12, md: 11, lg: 10 };
 
