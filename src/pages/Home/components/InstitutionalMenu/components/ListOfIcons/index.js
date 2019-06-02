@@ -6,6 +6,7 @@ import notificationBell from '../../../../../../components/Icon/assets/notificat
 import withWidth, { isWidthUp } from '@material-ui/core/withWidth/withWidth';
 import Icon from '../../../../../../components/Icon';
 import ButtonBase from '@material-ui/core/ButtonBase';
+import Box from '@material-ui/core/Box';
 
 const styles = theme => ({
   badge: {
@@ -25,18 +26,22 @@ class ListOfIcons extends Component {
     const { classes, width: screenWidth, ...other } = this.props;
 
     return (
-      <Grid container spacing={isWidthUp('md', screenWidth) ? 2 : 1} {...other}>
+      <Grid container {...other}>
         <Grid item>
           <ButtonBase>
             <Icon icon={blackSettingsButton} size={4} />
           </ButtonBase>
         </Grid>
         <Grid item>
-          <Icon
-            icon={notificationBell}
-            size={4}
-            badgeProps={{ badgeContent: 1, classes: { badge: classes.badge }, color: 'primary' }}
-          />
+          <Box ml={isWidthUp('md', screenWidth) ? 2 : 1}>
+            <ButtonBase>
+              <Icon
+                icon={notificationBell}
+                size={4}
+                badgeProps={{ badgeContent: 1, classes: { badge: classes.badge }, color: 'primary' }}
+              />
+            </ButtonBase>
+          </Box>
         </Grid>
       </Grid>
     );

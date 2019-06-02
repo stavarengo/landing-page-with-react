@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Grid from '@material-ui/core/Grid';
-import Box from '@material-ui/core/Box';
 import LogoWithNameAndSlogan from '../../../../components/companyLogo/LogoWithNameAndSlogan';
 import { FormattedMessage } from 'react-intl.macro';
 import { withStyles } from '@material-ui/styles';
@@ -19,18 +18,16 @@ class SectionBetweenInstitutionalMenuAndTheMainMenu extends Component {
     const { classes, ...other } = this.props;
 
     return (
-      <Box my={3}>
-        <Grid container alignItems={'flex-end'} {...other}>
-          <Grid item>
-            <LogoWithNameAndSlogan />
-          </Grid>
-          <Grid item>
-            <div className={classes.intranetMsg}>
-              <FormattedMessage id="Intranet" defaultMessage={'Intranet'} />
-            </div>
-          </Grid>
+      <Grid container alignItems={'flex-end'} {...other}>
+        <Grid item>
+          <LogoWithNameAndSlogan />
         </Grid>
-      </Box>
+        <Grid item>
+          <div className={classes.intranetMsg}>
+            <FormattedMessage id="Intranet" defaultMessage={'Intranet'} />
+          </div>
+        </Grid>
+      </Grid>
     );
   }
 }

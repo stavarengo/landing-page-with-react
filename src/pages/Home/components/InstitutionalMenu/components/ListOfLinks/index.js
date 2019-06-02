@@ -19,32 +19,32 @@ class ListOfLinks extends Component {
       <Grid container spacing={isWidthUp('md', screenWidth) ? 6 : 1} {...other}>
         <Grid item xs className={classes.gridItem}>
           <ListItem href={'#'}>
-            <FormattedMessage id={'Menu1'} defaultMessage="Groups" />
+            <FormattedMessage id={'Institutional.Menu1'} defaultMessage="Groups" />
           </ListItem>
         </Grid>
         <Grid item xs className={classes.gridItem}>
           <ListItem href={'/contact'}>
-            <FormattedMessage id={'Menu2'} defaultMessage="Contact" />
+            <FormattedMessage id={'Institutional.Menu2'} defaultMessage="Contact" />
           </ListItem>
         </Grid>
         <Grid item xs className={classes.gridItem}>
           <ListItem href={'#'}>
-            <FormattedMessage id={'Menu3'} defaultMessage="FAQ" />
+            <FormattedMessage id={'Institutional.Menu3'} defaultMessage="FAQ" />
           </ListItem>
         </Grid>
         <Grid item xs className={classes.gridItem}>
           <ListItem href={'#'}>
-            <FormattedMessage id={'Menu4'} defaultMessage="Facebook" />
+            <FormattedMessage id={'Institutional.Menu4'} defaultMessage="Facebook" />
           </ListItem>
         </Grid>
         <Grid item xs className={classes.gridItem}>
           <ListItem href={'#'}>
-            <FormattedMessage id={'Menu5'} defaultMessage="Microblog" />
+            <FormattedMessage id={'Institutional.Menu5'} defaultMessage="Microblog" />
           </ListItem>
         </Grid>
         <Grid item xs className={classes.gridItem}>
           <ListItem href={'#'}>
-            <FormattedMessage id={'Menu6'} defaultMessage="About us" />
+            <FormattedMessage id={'Institutional.Menu6'} defaultMessage="About us" />
           </ListItem>
         </Grid>
       </Grid>
