@@ -5,6 +5,7 @@ const theme = createMuiTheme({
     fontFamily: "'Open Sans', sans-serif",
   },
   palette: {
+    divider: '#dae4ee',
     text: {
       primary: '#657189',
     },
