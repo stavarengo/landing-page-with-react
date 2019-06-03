@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { defineMessages } from 'react-intl.macro';
 import { injectIntl } from 'react-intl';
-import externalLinkIcon from '../../../../../components/Icon/assets/external-link.svg';
+import chartIcon from '../../../../../components/Icon/assets/chart.svg';
 import { Card, CardContent, CardHeader } from '../../../../../components/Card';
 import Typography from '@material-ui/core/Typography';
 
@@ -18,7 +18,7 @@ class Polls extends Component {
 
     return (
       <Card {...other}>
-        <CardHeader icon={externalLinkIcon} title={intl.formatMessage(i18nMsg.title)} />
+        <CardHeader icon={chartIcon} title={intl.formatMessage(i18nMsg.title)} />
         <CardContent>
           <Typography variant={'h6'}>Temporary Placeholder</Typography>
         </CardContent>

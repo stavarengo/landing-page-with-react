@@ -13,32 +13,42 @@ import Polls from './components/Polls';
 import MyGroups from './components/MyGroups';
 import MyLinks from './components/MyLinks';
 import Box from '@material-ui/core/Box';
+import { withWidth } from '@material-ui/core';
+import { isWidthDown } from '@material-ui/core/withWidth';
 
-const allCards = [
-  Accordion,
-  DirectlyTo,
-  TelephoneBook,
-  Events,
-  Blogs,
-  Microblog,
-  News,
-  QualityManual,
-  AddWidget,
-  Polls,
-  MyGroups,
-  MyLinks,
-];
+const allCards = {
+  xsUp: [
+    [Accordion, DirectlyTo, Events, Blogs, News, Polls, MyLinks],
+    [TelephoneBook, QualityManual, MyGroups, Microblog, AddWidget],
+  ],
+  mdUp: [
+    [Accordion, Events, News, AddWidget],
+    [DirectlyTo, Blogs, QualityManual, Polls, MyLinks],
+    [TelephoneBook, Microblog, MyGroups],
+  ],
+};
 
 class Content extends Component {
   render() {
-    const { ...other } = this.props;
+    const { width: screenWidth, ...other } = this.props;
+
+    let cardsToShow = allCards.mdUp;
+    if (isWidthDown('md', screenWidth)) {
+      cardsToShow = allCards.xsUp;
+    }
 
     return (
       <Box px={1}>
         <Grid container spacing={3} {...other}>
-          {allCards.map((Card, index) => (
-            <Grid item xs={12} sm={6} md={4} key={index}>
-              <Card />
+          {cardsToShow.map((cards, columnIndex) => (
+            <Grid item xs={12} sm={6} md={4} key={columnIndex}>
+              <Grid container spacing={3}>
+                {cards.map((Card, rowIndex) => (
+                  <Grid item xs={12} key={`${columnIndex}${rowIndex}`}>
+                    <Card />
+                  </Grid>
+                ))}
+              </Grid>
             </Grid>
           ))}
         </Grid>
@@ -47,4 +57,4 @@ class Content extends Component {
   }
 }
 
-export default Content;
+export default withWidth()(Content);

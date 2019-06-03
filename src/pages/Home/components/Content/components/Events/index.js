@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { defineMessages } from 'react-intl.macro';
 import { FormattedDate, injectIntl } from 'react-intl';
-import externalLinkIcon from '../../../../../../components/Icon/assets/external-link.svg';
+import calendarIcon from '../../../../../../components/Icon/assets/calendar.svg';
 import { Card, CardContent, CardFooter, CardHeader } from '../../../../../../components/Card';
 import Divider from '@material-ui/core/Divider';
 import service from './services';
@@ -26,7 +26,7 @@ class DirectlyTo extends Component {
 
     return (
       <Card {...other}>
-        <CardHeader icon={externalLinkIcon} title={intl.formatMessage(i18nMsg.title)} />
+        <CardHeader icon={calendarIcon} title={intl.formatMessage(i18nMsg.title)} />
         <CardContent>
           <List>
             {allItems.map((item, index) => (

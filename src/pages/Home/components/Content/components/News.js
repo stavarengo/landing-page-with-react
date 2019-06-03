@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { defineMessages } from 'react-intl.macro';
 import { injectIntl } from 'react-intl';
-import externalLinkIcon from '../../../../../components/Icon/assets/external-link.svg';
+import newspaperIcon from '../../../../../components/Icon/assets/newspaper.svg';
 import { Card, CardHeader, CardContent, CardFooter } from '../../../../../components/Card';
 import Typography from '@material-ui/core/Typography';
 
@@ -22,7 +22,7 @@ class News extends Component {
 
     return (
       <Card {...other}>
-        <CardHeader icon={externalLinkIcon} title={intl.formatMessage(i18nMsg.title)} />
+        <CardHeader icon={newspaperIcon} title={intl.formatMessage(i18nMsg.title)} />
         <CardContent>
           <Typography variant={'h6'}>Temporary Placeholder</Typography>
         </CardContent>
