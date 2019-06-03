@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2019-06-02T18:44:28.900Z\n"
+"POT-Creation-Date: 2019-06-03T20:20:13.063Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -27,6 +27,14 @@ msgstr "%s - CuraNu"
 msgctxt "Institutional.Menu6"
 msgid "About us"
 msgstr "Over ons"
+
+#. [HomeContent_AccordionTitle]
+#. defaultMessage is:
+#. Accordion {number}
+#: i18n/src/pages/Home/components/Content/components/Accordion.json
+msgctxt "HomeContent_AccordionTitle"
+msgid "Accordion {number}"
+msgstr "Accordion {number}"
 
 #. [MainMenu.Menu1]
 #. defaultMessage is:
@@ -78,6 +86,14 @@ msgstr "CuraNu"
 msgctxt "App.DefaultDocumentTitle"
 msgid "CuraNu - Care and welfare"
 msgstr "CuraNu - Zorg en welzijn"
+
+#. [HomeContent_DirectlyTo_Title]
+#. defaultMessage is:
+#. Directly To
+#: i18n/src/pages/Home/components/Content/components/DirectlyTo/index.json
+msgctxt "HomeContent_DirectlyTo_Title"
+msgid "Directly To"
+msgstr "Direct Naar"
 
 #. [MainMenu.Menu3]
 #. defaultMessage is:

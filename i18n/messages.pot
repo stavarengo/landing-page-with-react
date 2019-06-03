@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2019-06-02T19:16:31.587Z\n"
+"POT-Creation-Date: 2019-06-03T20:20:13.063Z\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "MIME-Version: 1.0\n"
@@ -21,6 +21,14 @@ msgstr ""
 #. About us
 msgctxt "Institutional.Menu6"
 msgid "About us"
+msgstr ""
+
+#: i18n/src/pages/Home/components/Content/components/Accordion.json
+#. [HomeContent_AccordionTitle]
+#. defaultMessage is:
+#. Accordion {number}
+msgctxt "HomeContent_AccordionTitle"
+msgid "Accordion {number}"
 msgstr ""
 
 #: i18n/src/pages/Home/services/allMenuItems.json
@@ -73,6 +81,14 @@ msgstr ""
 #. CuraNu - Care and welfare
 msgctxt "App.DefaultDocumentTitle"
 msgid "CuraNu - Care and welfare"
+msgstr ""
+
+#: i18n/src/pages/Home/components/Content/components/DirectlyTo/index.json
+#. [HomeContent_DirectlyTo_Title]
+#. defaultMessage is:
+#. Directly To
+msgctxt "HomeContent_DirectlyTo_Title"
+msgid "Directly To"
 msgstr ""
 
 #: i18n/src/pages/Home/services/allMenuItems.json
