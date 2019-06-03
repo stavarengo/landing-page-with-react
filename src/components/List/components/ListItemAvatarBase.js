@@ -1,5 +1,12 @@
 import React, { Component } from 'react';
 import MuiListItemAvatar from '@material-ui/core/ListItemAvatar';
+import { withStyles } from '@material-ui/styles';
+
+const styles = theme => ({
+  root: {
+    marginRight: theme.spacing(6),
+  },
+});
 
 class ListItemAvatarBase extends Component {
   render() {
@@ -13,4 +20,4 @@ class ListItemAvatarBase extends Component {
   }
 }
 
-export default ListItemAvatarBase;
+export default withStyles(styles)(ListItemAvatarBase);

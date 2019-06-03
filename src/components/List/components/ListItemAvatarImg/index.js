@@ -4,13 +4,12 @@ import ListItemAvatarBase from '../ListItemAvatarBase';
 import Avatar from './Avatar';
 import { PropTypes } from 'prop-types';
 
-const styles = theme => ({
+const styles = {
   root: {
     width: props => props.width || ListItemAvatarImg.defaultProps.width,
     height: props => props.height || ListItemAvatarImg.defaultProps.height,
-    marginRight: theme.spacing(6),
   },
-});
+};
 
 class ListItemAvatarImg extends Component {
   static defaultProps = {

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2019-06-03T20:20:13.063Z\n"
+"POT-Creation-Date: 2019-06-03T20:25:00.222Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -36,6 +36,14 @@ msgctxt "HomeContent_AccordionTitle"
 msgid "Accordion {number}"
 msgstr "Accordion {number}"
 
+#. [HomeContent_AddWidget_Footer]
+#. defaultMessage is:
+#. Add widget
+#: i18n/src/pages/Home/components/Content/components/AddWidget.json
+msgctxt "HomeContent_AddWidget_Footer"
+msgid "Add widget"
+msgstr "Widget toevoegen"
+
 #. [MainMenu.Menu1]
 #. defaultMessage is:
 #. Articles
@@ -43,6 +51,14 @@ msgstr "Accordion {number}"
 msgctxt "MainMenu.Menu1"
 msgid "Articles"
 msgstr "Artikelen"
+
+#. [HomeContent_Blogs_Title]
+#. defaultMessage is:
+#. Blogs
+#: i18n/src/pages/Home/components/Content/components/Blogs.json
+msgctxt "HomeContent_Blogs_Title"
+msgid "Blogs"
+msgstr "Blogs"
 
 #. [companySlogan]
 #. defaultMessage is:
@@ -95,6 +111,14 @@ msgctxt "HomeContent_DirectlyTo_Title"
 msgid "Directly To"
 msgstr "Direct Naar"
 
+#. [HomeContent_Events_Title]
+#. defaultMessage is:
+#. Events
+#: i18n/src/pages/Home/components/Content/components/Events/index.json
+msgctxt "HomeContent_Events_Title"
+msgid "Events"
+msgstr "Evenementen"
+
 #. [MainMenu.Menu3]
 #. defaultMessage is:
 #. Events
@@ -135,6 +159,14 @@ msgctxt "Intranet"
 msgid "Intranet"
 msgstr "Intranet"
 
+#. [HomeContent_Microblog_Title]
+#. defaultMessage is:
+#. Microblog
+#: i18n/src/pages/Home/components/Content/components/Microblog.json
+msgctxt "HomeContent_Microblog_Title"
+msgid "Microblog"
+msgstr "Microblog"
+
 #. [Institutional.Menu5]
 #. defaultMessage is:
 #. Microblog
@@ -143,6 +175,62 @@ msgctxt "Institutional.Menu5"
 msgid "Microblog"
 msgstr "Microblog"
 
+#. [HomeContent_Blogs_Footer]
+#. defaultMessage is:
+#. More blogs
+#: i18n/src/pages/Home/components/Content/components/Blogs.json
+msgctxt "HomeContent_Blogs_Footer"
+msgid "More blogs"
+msgstr "Meer blogs"
+
+#. [HomeContent_Events_Footer]
+#. defaultMessage is:
+#. More events
+#: i18n/src/pages/Home/components/Content/components/Events/index.json
+msgctxt "HomeContent_Events_Footer"
+msgid "More events"
+msgstr "Meer evenementen"
+
+#. [HomeContent_MyGroups_Footer]
+#. defaultMessage is:
+#. More groups
+#: i18n/src/pages/Home/components/Content/components/MyGroups.json
+msgctxt "HomeContent_MyGroups_Footer"
+msgid "More groups"
+msgstr "Meer groepen"
+
+#. [HomeContent_News_Footer]
+#. defaultMessage is:
+#. More news
+#: i18n/src/pages/Home/components/Content/components/News.json
+msgctxt "HomeContent_News_Footer"
+msgid "More news"
+msgstr "Meer nieuws"
+
+#. [HomeContent_MyGroups_Title]
+#. defaultMessage is:
+#. My Groups
+#: i18n/src/pages/Home/components/Content/components/MyGroups.json
+msgctxt "HomeContent_MyGroups_Title"
+msgid "My Groups"
+msgstr "Mijn Groepen"
+
+#. [HomeContent_MyLinks_Title]
+#. defaultMessage is:
+#. My Links
+#: i18n/src/pages/Home/components/Content/components/MyLinks.json
+msgctxt "HomeContent_MyLinks_Title"
+msgid "My Links"
+msgstr "Mijn Links"
+
+#. [HomeContent_News_Title]
+#. defaultMessage is:
+#. News
+#: i18n/src/pages/Home/components/Content/components/News.json
+msgctxt "HomeContent_News_Title"
+msgid "News"
+msgstr "Nieuws"
+
 #. [MainMenu.Menu2]
 #. defaultMessage is:
 #. News
@@ -150,6 +238,22 @@ msgstr "Microblog"
 msgctxt "MainMenu.Menu2"
 msgid "News"
 msgstr "Nieuws"
+
+#. [HomeContent_Polls_Title]
+#. defaultMessage is:
+#. Polls
+#: i18n/src/pages/Home/components/Content/components/Polls.json
+msgctxt "HomeContent_Polls_Title"
+msgid "Polls"
+msgstr "Peilingen"
+
+#. [HomeContent_QualityManual_Title]
+#. defaultMessage is:
+#. Quality Manual
+#: i18n/src/pages/Home/components/Content/components/QualityManual.json
+msgctxt "HomeContent_QualityManual_Title"
+msgid "Quality Manual"
+msgstr "Kwaliteitshandboek"
 
 #. [MainMenu.Menu4]
 #. defaultMessage is:
@@ -166,3 +270,19 @@ msgstr "Kwaliteitshandboek"
 msgctxt "Search"
 msgid "Search..."
 msgstr "Zoeken..."
+
+#. [HomeContent_Microblog_Footer]
+#. defaultMessage is:
+#. Show more
+#: i18n/src/pages/Home/components/Content/components/Microblog.json
+msgctxt "HomeContent_Microblog_Footer"
+msgid "Show more"
+msgstr "Toon meer"
+
+#. [HomeContent_QualityManual_Footer]
+#. defaultMessage is:
+#. To quality manual
+#: i18n/src/pages/Home/components/Content/components/QualityManual.json
+msgctxt "HomeContent_QualityManual_Footer"
+msgid "To quality manual"
+msgstr "Naar kwaliteitshandboek"
