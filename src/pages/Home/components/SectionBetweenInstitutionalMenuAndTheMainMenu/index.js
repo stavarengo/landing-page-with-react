@@ -10,6 +10,7 @@ const styles = theme => ({
     fontSize: '1.5rem',
     fontWeight: 700,
     lineHeight: 1.33,
+    color: '#000',
   },
 });
 

@@ -24,6 +24,7 @@ const styles = {
     height: '3.25rem',
   },
   companyName: {
+    color: '#000',
     fontSize: '1.5rem',
     fontFamily: "'Raleway', sans-serif",
 
@@ -32,6 +33,7 @@ const styles = {
     },
   },
   companySlogan: {
+    color: '#000',
     fontFamily: "'Raleway', sans-serif",
     fontSize: '0.9375rem',
   },

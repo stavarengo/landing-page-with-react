@@ -8,6 +8,7 @@ import Box from '@material-ui/core/Box';
 import DrawerMenu from './components/DrawerMenu';
 import { isWidthDown } from '@material-ui/core/withWidth';
 import withWidth from '@material-ui/core/withWidth';
+import Content from './components/Content';
 
 class Home extends Component {
   state = {
@@ -22,7 +23,7 @@ class Home extends Component {
     return (
       <Grid container justify={'center'} {...other}>
         <Grid item xs={12}>
-          <ScreenSize style={{ position: 'fixed', top: '300px', left: '30px' }} />
+          <ScreenSize style={{ position: 'fixed', top: '185px', left: '30px', zIndex: 10000000 }} />
 
           {renderMenuSandwich && <DrawerMenu open={this.state.isDrawerOpen} onClose={this.onDrawerClose.bind(this)} />}
           <Grid container justify={'center'}>
@@ -46,6 +47,15 @@ class Home extends Component {
               }}
             />
           </Box>
+        </Grid>
+        <Grid item xs={12}>
+          <Grid container justify={'center'}>
+            <Grid item {...contentSize}>
+              <Box mt={2}>
+                <Content />
+              </Box>
+            </Grid>
+          </Grid>
         </Grid>
       </Grid>
     );
