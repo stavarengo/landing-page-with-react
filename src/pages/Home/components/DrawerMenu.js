@@ -7,7 +7,6 @@ import allMenuItems from '../services/allMenuItems';
 import { injectIntl } from 'react-intl';
 import Divider from '@material-ui/core/Divider';
 import List from '@material-ui/core/List';
-import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import PropTypes from 'prop-types';
 

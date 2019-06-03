@@ -48,6 +48,8 @@ const App = injectIntl(
       return (
         <StylesProvider generateClassName={generateClassName}>
           <ThemeProvider theme={theme}>
+            <CssBaseline />
+
             <Helmet
               defaultTitle={this.props.intl.formatMessage(i18nMsg.DefaultDocumentTitle)}
               titleTemplate={this.props.intl.formatMessage(i18nMsg.DocumentTitleTemplate)}
@@ -72,10 +74,7 @@ export default class AppWithIntlProvider extends Component {
         key={reactIntlSetup.currentLanguage}
         textComponent={React.Fragment}
       >
-        <React.Fragment>
-          <CssBaseline />
-          <App />
-        </React.Fragment>
+        <App />
       </IntlProvider>
     );
   }

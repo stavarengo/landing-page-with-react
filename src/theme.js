@@ -11,4 +11,10 @@ const theme = createMuiTheme({
   },
 });
 
+if (process.env.NODE_ENV !== 'produciton') {
+  if (typeof window !== 'undefined') {
+    window.staTheme = theme;
+  }
+}
+
 export default theme;
