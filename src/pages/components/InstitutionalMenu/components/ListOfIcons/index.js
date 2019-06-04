@@ -8,6 +8,7 @@ import Icon from '../../../../../components/Icon';
 import ButtonBase from '@material-ui/core/ButtonBase';
 import Box from '@material-ui/core/Box';
 import Link from '@material-ui/core/Link';
+import PropTypes from 'prop-types';
 
 const styles = theme => ({
   languages: {
@@ -32,19 +33,30 @@ const styles = theme => ({
 });
 
 class ListOfIcons extends Component {
+  static propTypes = {
+    /**
+     * Array of the languages the website support.
+     * It will be rendered as menu of options for the user to change the website language.
+     */
+    languages: PropTypes.arrayOf(
+      PropTypes.shape({
+        /**
+         * The text to display.
+         */
+        label: PropTypes.string.isRequired,
+        /**
+         * The URL to where the user will be redirect when he clicks in the language.
+         */
+        url: PropTypes.string.isRequired,
+      })
+    ),
+  };
   render() {
-    const { classes, width: screenWidth, ...other } = this.props;
+    const { languages, classes, width: screenWidth, ...other } = this.props;
 
     return (
       <Grid container {...other} alignItems={'center'}>
-        <Grid item className={classes.languages}>
-          <Link color={'inherit'} href={'/'}>
-            EN
-          </Link>
-          <Link color={'inherit'} href={'/nl'}>
-            NL
-          </Link>
-        </Grid>
+        {this.getLanguagesMenu(languages, classes)}
         <Grid item>
           <ButtonBase>
             <Icon icon={blackSettingsButton} size={4} />
@@ -61,6 +73,22 @@ class ListOfIcons extends Component {
             </ButtonBase>
           </Box>
         </Grid>
+      </Grid>
+    );
+  }
+
+  getLanguagesMenu(languages, classes) {
+    if (!languages) {
+      return null;
+    }
+
+    return (
+      <Grid item className={classes.languages}>
+        {languages.map((language, index) => (
+          <Link color={'inherit'} href={language.url} key={index}>
+            {language.label}
+          </Link>
+        ))}
       </Grid>
     );
   }

@@ -55,8 +55,10 @@ export default (req, res, next) => {
 
   let requestedLanguage = req.acceptsLanguages(allSupportedLanguages);
   requestedLanguage = requestedLanguage || fallbackLanguage;
-  if (req.query.l) {
-    const normalizedLanguageParameter = reactIntlSetup.normalizeLanguage(req.query.l);
+  let langMatches;
+  if (req.baseUrl && (langMatches = req.baseUrl.match(/^\/(..)(\/.+$|$)/))) {
+    let langMatch = langMatches[1];
+    const normalizedLanguageParameter = reactIntlSetup.normalizeLanguage(langMatch);
     if (allSupportedLanguages.indexOf(normalizedLanguageParameter) > -1) {
       requestedLanguage = normalizedLanguageParameter;
     } else if (allSupportedLanguages.indexOf(reactIntlSetup.getPrimaryLanguage(normalizedLanguageParameter)) > -1) {

@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2019-06-04T14:52:37.658Z\n"
+"POT-Creation-Date: 2019-06-04T18:09:08.740Z\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "MIME-Version: 1.0\n"
@@ -15,7 +15,15 @@ msgctxt "App.DocumentTitleTemplate"
 msgid "%s - CuraNu"
 msgstr ""
 
-#: i18n/src/pages/Home/services/allMenuItems.json
+#: i18n/src/pages/NotFound/index.json
+#. [NotFound.404]
+#. defaultMessage is:
+#. 404 - Page not found!
+msgctxt "NotFound.404"
+msgid "404 - Page not found!"
+msgstr ""
+
+#: i18n/src/pages/components/services/allMenuItems.json
 #. [Institutional.Menu6]
 #. defaultMessage is:
 #. About us
@@ -23,7 +31,7 @@ msgctxt "Institutional.Menu6"
 msgid "About us"
 msgstr ""
 
-#: i18n/src/pages/Home/components/Content/components/Accordion.json
+#: i18n/src/pages/Home/components/Accordion.json
 #. [HomeContent_AccordionTitle]
 #. defaultMessage is:
 #. Accordion {number}
@@ -31,7 +39,7 @@ msgctxt "HomeContent_AccordionTitle"
 msgid "Accordion {number}"
 msgstr ""
 
-#: i18n/src/pages/Home/components/Content/components/AddWidget.json
+#: i18n/src/pages/Home/components/AddWidget.json
 #. [HomeContent_AddWidget_Footer]
 #. defaultMessage is:
 #. Add widget
@@ -39,7 +47,7 @@ msgctxt "HomeContent_AddWidget_Footer"
 msgid "Add widget"
 msgstr ""
 
-#: i18n/src/pages/Home/services/allMenuItems.json
+#: i18n/src/pages/components/services/allMenuItems.json
 #. [MainMenu.Menu1]
 #. defaultMessage is:
 #. Articles
@@ -47,7 +55,7 @@ msgctxt "MainMenu.Menu1"
 msgid "Articles"
 msgstr ""
 
-#: i18n/src/pages/Home/components/Content/components/Blogs/index.json
+#: i18n/src/pages/Home/components/Blogs/index.json
 #. [HomeContent_Blogs_Title]
 #. defaultMessage is:
 #. Blogs
@@ -67,7 +75,7 @@ msgctxt "companySlogan"
 msgid "Care and welfare"
 msgstr ""
 
-#: i18n/src/pages/Home/services/allMenuItems.json
+#: i18n/src/pages/components/services/allMenuItems.json
 #. [Institutional.Menu2]
 #. defaultMessage is:
 #. Contact
@@ -99,7 +107,7 @@ msgctxt "App.DefaultDocumentTitle"
 msgid "CuraNu - Care and welfare"
 msgstr ""
 
-#: i18n/src/pages/Home/components/Content/components/DirectlyTo/index.json
+#: i18n/src/pages/Home/components/DirectlyTo/index.json
 #. [HomeContent_DirectlyTo_Title]
 #. defaultMessage is:
 #. Directly To
@@ -107,15 +115,7 @@ msgctxt "HomeContent_DirectlyTo_Title"
 msgid "Directly To"
 msgstr ""
 
-#: i18n/src/pages/Home/components/Content/components/Events/index.json
-#. [HomeContent_Events_Title]
-#. defaultMessage is:
-#. Events
-msgctxt "HomeContent_Events_Title"
-msgid "Events"
-msgstr ""
-
-#: i18n/src/pages/Home/services/allMenuItems.json
+#: i18n/src/pages/components/services/allMenuItems.json
 #. [MainMenu.Menu3]
 #. defaultMessage is:
 #. Events
@@ -123,7 +123,15 @@ msgctxt "MainMenu.Menu3"
 msgid "Events"
 msgstr ""
 
-#: i18n/src/pages/Home/services/allMenuItems.json
+#: i18n/src/pages/Home/components/Events/index.json
+#. [HomeContent_Events_Title]
+#. defaultMessage is:
+#. Events
+msgctxt "HomeContent_Events_Title"
+msgid "Events"
+msgstr ""
+
+#: i18n/src/pages/components/services/allMenuItems.json
 #. [Institutional.Menu3]
 #. defaultMessage is:
 #. FAQ
@@ -131,7 +139,7 @@ msgctxt "Institutional.Menu3"
 msgid "FAQ"
 msgstr ""
 
-#: i18n/src/pages/Home/services/allMenuItems.json
+#: i18n/src/pages/components/services/allMenuItems.json
 #. [Institutional.Menu4]
 #. defaultMessage is:
 #. Facebook
@@ -139,15 +147,15 @@ msgctxt "Institutional.Menu4"
 msgid "Facebook"
 msgstr ""
 
-#: i18n/src/pages/Home/components/Content/components/TelephoneBook/index.json
-#. [HomeContent_TelephoneBook_Title]
+#: i18n/src/pages/Home/components/TelephoneBook/index.json
+#. [HomeContent_TelephoneBook_Subtitle]
 #. defaultMessage is:
 #. Find colleagues by name, keyword, position, etc.
-msgctxt "HomeContent_TelephoneBook_Title"
+msgctxt "HomeContent_TelephoneBook_Subtitle"
 msgid "Find colleagues by name, keyword, position, etc."
 msgstr ""
 
-#: i18n/src/pages/Home/services/allMenuItems.json
+#: i18n/src/pages/components/services/allMenuItems.json
 #. [Institutional.Menu1]
 #. defaultMessage is:
 #. Groups
@@ -155,7 +163,7 @@ msgctxt "Institutional.Menu1"
 msgid "Groups"
 msgstr ""
 
-#: i18n/src/pages/Home/components/SectionBetweenInstitutionalMenuAndTheMainMenu/index.json
+#: i18n/src/pages/components/SectionBetweenInstitutionalMenuAndTheMainMenu/index.json
 #. [Intranet]
 #. defaultMessage is:
 #. Intranet
@@ -163,15 +171,7 @@ msgctxt "Intranet"
 msgid "Intranet"
 msgstr ""
 
-#: i18n/src/pages/Home/components/Content/components/Microblog/index.json
-#. [HomeContent_Microblog_Title]
-#. defaultMessage is:
-#. Microblog
-msgctxt "HomeContent_Microblog_Title"
-msgid "Microblog"
-msgstr ""
-
-#: i18n/src/pages/Home/services/allMenuItems.json
+#: i18n/src/pages/components/services/allMenuItems.json
 #. [Institutional.Menu5]
 #. defaultMessage is:
 #. Microblog
@@ -179,7 +179,15 @@ msgctxt "Institutional.Menu5"
 msgid "Microblog"
 msgstr ""
 
-#: i18n/src/pages/Home/components/Content/components/Blogs/index.json
+#: i18n/src/pages/Home/components/Microblog/index.json
+#. [HomeContent_Microblog_Title]
+#. defaultMessage is:
+#. Microblog
+msgctxt "HomeContent_Microblog_Title"
+msgid "Microblog"
+msgstr ""
+
+#: i18n/src/pages/Home/components/Blogs/index.json
 #. [HomeContent_Blogs_Footer]
 #. defaultMessage is:
 #. More blogs
@@ -187,7 +195,7 @@ msgctxt "HomeContent_Blogs_Footer"
 msgid "More blogs"
 msgstr ""
 
-#: i18n/src/pages/Home/components/Content/components/Events/index.json
+#: i18n/src/pages/Home/components/Events/index.json
 #. [HomeContent_Events_Footer]
 #. defaultMessage is:
 #. More events
@@ -195,7 +203,7 @@ msgctxt "HomeContent_Events_Footer"
 msgid "More events"
 msgstr ""
 
-#: i18n/src/pages/Home/components/Content/components/MyGroups/index.json
+#: i18n/src/pages/Home/components/MyGroups/index.json
 #. [HomeContent_MyGroups_Footer]
 #. defaultMessage is:
 #. More groups
@@ -203,7 +211,7 @@ msgctxt "HomeContent_MyGroups_Footer"
 msgid "More groups"
 msgstr ""
 
-#: i18n/src/pages/Home/components/Content/components/News/index.json
+#: i18n/src/pages/Home/components/News/index.json
 #. [HomeContent_News_Footer]
 #. defaultMessage is:
 #. More news
@@ -211,7 +219,7 @@ msgctxt "HomeContent_News_Footer"
 msgid "More news"
 msgstr ""
 
-#: i18n/src/pages/Home/components/Content/components/MyGroups/index.json
+#: i18n/src/pages/Home/components/MyGroups/index.json
 #. [HomeContent_MyGroups_Title]
 #. defaultMessage is:
 #. My Groups
@@ -219,7 +227,7 @@ msgctxt "HomeContent_MyGroups_Title"
 msgid "My Groups"
 msgstr ""
 
-#: i18n/src/pages/Home/components/Content/components/MyLinks/index.json
+#: i18n/src/pages/Home/components/MyLinks/index.json
 #. [HomeContent_MyLinks_Title]
 #. defaultMessage is:
 #. My Links
@@ -227,15 +235,7 @@ msgctxt "HomeContent_MyLinks_Title"
 msgid "My Links"
 msgstr ""
 
-#: i18n/src/pages/Home/components/Content/components/News/index.json
-#. [HomeContent_News_Title]
-#. defaultMessage is:
-#. News
-msgctxt "HomeContent_News_Title"
-msgid "News"
-msgstr ""
-
-#: i18n/src/pages/Home/services/allMenuItems.json
+#: i18n/src/pages/components/services/allMenuItems.json
 #. [MainMenu.Menu2]
 #. defaultMessage is:
 #. News
@@ -243,7 +243,15 @@ msgctxt "MainMenu.Menu2"
 msgid "News"
 msgstr ""
 
-#: i18n/src/pages/Home/components/Content/components/Polls.json
+#: i18n/src/pages/Home/components/News/index.json
+#. [HomeContent_News_Title]
+#. defaultMessage is:
+#. News
+msgctxt "HomeContent_News_Title"
+msgid "News"
+msgstr ""
+
+#: i18n/src/pages/Home/components/Polls.json
 #. [HomeContent_Polls_NoPollsAvailable]
 #. defaultMessage is:
 #. No polls are available.
@@ -251,7 +259,7 @@ msgctxt "HomeContent_Polls_NoPollsAvailable"
 msgid "No polls are available."
 msgstr ""
 
-#: i18n/src/pages/Home/components/Content/components/Polls.json
+#: i18n/src/pages/Home/components/Polls.json
 #. [HomeContent_Polls_Title]
 #. defaultMessage is:
 #. Polls
@@ -259,7 +267,7 @@ msgctxt "HomeContent_Polls_Title"
 msgid "Polls"
 msgstr ""
 
-#: i18n/src/pages/Home/components/Content/components/Microblog/components/PostEditor/index.json
+#: i18n/src/pages/Home/components/Microblog/components/PostEditor/index.json
 #. [HomeContent_Microblog_PostEditor_PostButton]
 #. defaultMessage is:
 #. Publish
@@ -267,7 +275,7 @@ msgctxt "HomeContent_Microblog_PostEditor_PostButton"
 msgid "Publish"
 msgstr ""
 
-#: i18n/src/pages/Home/components/Content/components/QualityManual/index.json
+#: i18n/src/pages/Home/components/QualityManual/index.json
 #. [HomeContent_QualityManual_Title]
 #. defaultMessage is:
 #. Quality Manual
@@ -275,7 +283,7 @@ msgctxt "HomeContent_QualityManual_Title"
 msgid "Quality Manual"
 msgstr ""
 
-#: i18n/src/pages/Home/services/allMenuItems.json
+#: i18n/src/pages/components/services/allMenuItems.json
 #. [MainMenu.Menu4]
 #. defaultMessage is:
 #. Quality manual
@@ -283,7 +291,7 @@ msgctxt "MainMenu.Menu4"
 msgid "Quality manual"
 msgstr ""
 
-#: i18n/src/pages/Home/components/Content/components/Microblog/components/LastPostPreview/index.json
+#: i18n/src/pages/Home/components/Microblog/components/LastPostPreview/index.json
 #. [HomeContent_Microblog_Reaction]
 #. defaultMessage is:
 #. Read more and reactions ({number})
@@ -299,7 +307,7 @@ msgctxt "Search"
 msgid "Search..."
 msgstr ""
 
-#: i18n/src/pages/Home/components/Content/components/Microblog/index.json
+#: i18n/src/pages/Home/components/Microblog/index.json
 #. [HomeContent_Microblog_Footer]
 #. defaultMessage is:
 #. Show more
@@ -307,7 +315,7 @@ msgctxt "HomeContent_Microblog_Footer"
 msgid "Show more"
 msgstr ""
 
-#: i18n/src/pages/Home/components/Content/components/TelephoneBook/index.json
+#: i18n/src/pages/Home/components/TelephoneBook/index.json
 #. [HomeContent_TelephoneBook_Title]
 #. defaultMessage is:
 #. Telephone Book
@@ -315,7 +323,7 @@ msgctxt "HomeContent_TelephoneBook_Title"
 msgid "Telephone Book"
 msgstr ""
 
-#: i18n/src/pages/Home/components/Content/components/QualityManual/index.json
+#: i18n/src/pages/Home/components/QualityManual/index.json
 #. [HomeContent_QualityManual_Footer]
 #. defaultMessage is:
 #. To quality manual
@@ -323,7 +331,7 @@ msgctxt "HomeContent_QualityManual_Footer"
 msgid "To quality manual"
 msgstr ""
 
-#: i18n/src/pages/Home/components/Content/components/QualityManual/index.json
+#: i18n/src/pages/Home/components/QualityManual/index.json
 #. [HomeContent_QualityManual_Updated]
 #. defaultMessage is:
 #. Updated: {date, date}

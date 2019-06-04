@@ -1,76 +1,64 @@
 import React, { Component } from 'react';
-import InstitutionalMenu from '../components/InstitutionalMenu';
 import Grid from '@material-ui/core/Grid';
-import SectionBetweenInstitutionalMenuAndTheMainMenu from '../components/SectionBetweenInstitutionalMenuAndTheMainMenu';
-import MainMenu from '../components/MainMenu';
+import Accordion from './components/Accordion';
+import DirectlyTo from './components/DirectlyTo';
+import Index from './components/TelephoneBook';
+import Events from './components/Events';
+import Blogs from './components/Blogs';
+import Microblog from './components/Microblog';
+import News from './components/News';
+import QualityManual from './components/QualityManual';
+import AddWidget from './components/AddWidget';
+import Polls from './components/Polls';
+import MyGroups from './components/MyGroups';
+import MyLinks from './components/MyLinks';
 import Box from '@material-ui/core/Box';
-import DrawerMenu from '../components/DrawerMenu';
-import { isWidthDown } from '@material-ui/core/withWidth';
-import withWidth from '@material-ui/core/withWidth';
-import Content from './components/Content';
+import { withWidth } from '@material-ui/core';
+import { isWidthUp } from '@material-ui/core/withWidth';
 
-class Home extends Component {
-  state = {
-    isDrawerOpen: false,
-  };
+const allCards = {
+  xsUp: [
+    [Accordion, DirectlyTo, Events, Blogs, News, Polls, MyLinks],
+    [Index, QualityManual, MyGroups, Microblog, AddWidget],
+  ],
+  mdUp: [
+    [Accordion, Events, News, AddWidget],
+    [DirectlyTo, Blogs, QualityManual, Polls, MyLinks],
+    [Index, Microblog, MyGroups],
+  ],
+};
+
+class Content extends Component {
   render() {
     const { staticContext, width: screenWidth, ...other } = this.props;
 
-    const contentSize = { xs: 12, md: 11, lg: 10 };
-    const renderMenuSandwich = isWidthDown('sm', screenWidth);
+    let cardsToShow = allCards.xsUp;
+    let gridCols = { xs: 12 };
+    if (isWidthUp('md', screenWidth)) {
+      gridCols = { xs: 4 };
+      cardsToShow = allCards.mdUp;
+    } else if (isWidthUp('sm', screenWidth)) {
+      gridCols = { xs: 6 };
+    }
 
     return (
-      <Grid container justify={'center'} {...other}>
-        <Grid item xs={12}>
-          {/*<ScreenSize style={{ position: 'fixed', top: '185px', left: '30px', zIndex: 10000000 }} />*/}
-
-          {renderMenuSandwich && <DrawerMenu open={this.state.isDrawerOpen} onClose={this.onDrawerClose.bind(this)} />}
-          <Grid container justify={'center'}>
-            <Grid item {...contentSize}>
-              <InstitutionalMenu
-                onSandwichMenuClick={this.onSandwichMenuClick.bind(this)}
-                renderMenuSandwich={renderMenuSandwich}
-              />
-              <Box my={3} px={1}>
-                <SectionBetweenInstitutionalMenuAndTheMainMenu />
-              </Box>
+      <Box px={1}>
+        <Grid container spacing={3} {...other}>
+          {cardsToShow.map((cards, columnIndex) => (
+            <Grid item {...gridCols} key={columnIndex}>
+              <Grid container spacing={3}>
+                {cards.map((Card, rowIndex) => (
+                  <Grid item xs={12} key={`${columnIndex}${rowIndex}`}>
+                    <Card />
+                  </Grid>
+                ))}
+              </Grid>
             </Grid>
-          </Grid>
+          ))}
         </Grid>
-        <Grid item xs={12}>
-          <Box py={4} px={1} mt={1} clone>
-            <MainMenu
-              renderListOfMenuItems={!renderMenuSandwich}
-              contentItemProps={{
-                ...contentSize,
-              }}
-            />
-          </Box>
-        </Grid>
-        <Grid item xs={12}>
-          <Grid container justify={'center'}>
-            <Grid item {...contentSize}>
-              <Box mt={2}>
-                <Content />
-              </Box>
-            </Grid>
-          </Grid>
-        </Grid>
-      </Grid>
+      </Box>
     );
-  }
-
-  onSandwichMenuClick() {
-    this.setState({
-      isDrawerOpen: !this.state.isDrawerOpen,
-    });
-  }
-
-  onDrawerClose() {
-    this.setState({
-      isDrawerOpen: false,
-    });
   }
 }
 
-export default withWidth()(Home);
+export default withWidth()(Content);

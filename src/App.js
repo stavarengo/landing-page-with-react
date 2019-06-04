@@ -5,10 +5,11 @@ import Loadable from 'react-loadable';
 import Loading from './components/Loading';
 import theme from './theme';
 import reactIntlSetup from './reactIntlSetup';
-import { Route } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import Helmet from 'react-helmet';
 import { createGenerateClassName, StylesProvider, ThemeProvider } from '@material-ui/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
+import availableLanguages from './services/availableLanguages';
 
 const i18nMsg = defineMessages({
   DefaultDocumentTitle: {
@@ -27,7 +28,11 @@ const i18nMsg = defineMessages({
 });
 
 const AsyncPage = Loadable({
-  loader: () => import('./pages/Home'),
+  loader: () => import('./pages'),
+  loading: Loading,
+});
+const AsyncNotFound = Loadable({
+  loader: () => import('./pages/NotFound'),
   loading: Loading,
 });
 
@@ -56,7 +61,15 @@ const App = injectIntl(
             >
               <html lang={this.props.intl.locale} />
             </Helmet>
-            <Route component={AsyncPage} />
+            <Switch>
+              <Route
+                component={AsyncPage}
+                path={`/:lang(${availableLanguages()
+                  .map(({ url }) => url)
+                  .join('|')})?`}
+              />
+              <Route component={AsyncNotFound} />
+            </Switch>
           </ThemeProvider>
         </StylesProvider>
       );

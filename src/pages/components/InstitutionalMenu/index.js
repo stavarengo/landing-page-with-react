@@ -18,24 +18,32 @@ class InstitutionalMenu extends Component {
      * Callback invoked when the users clicks in the menu sandwich button.
      */
     onSandwichMenuClick: PropTypes.func.isRequired,
+    /**
+     * @see ListOfIcons.PropTypes.languages
+     */
+    languages: PropTypes.arrayOf(PropTypes.object),
+    /**
+     * List of items to display in the menu.
+     */
+    items: PropTypes.arrayOf(PropTypes.object).isRequired,
   };
 
   render() {
-    const { renderMenuSandwich, onSandwichMenuClick, ...other } = this.props;
+    const { languages, items, renderMenuSandwich, onSandwichMenuClick, ...other } = this.props;
 
     return (
       <Box borderBottom={1} borderColor={'#ebf0f4'} clone p={1}>
         <Grid container alignItems={'center'} {...other}>
-          <Grid item>{this.getMenuItemsOrSandwichIcon(renderMenuSandwich, onSandwichMenuClick)}</Grid>
+          <Grid item>{this.getMenuItemsOrSandwichIcon(renderMenuSandwich, items, onSandwichMenuClick)}</Grid>
           <Grid item xs>
-            <ListOfIcons justify={'flex-end'} />
+            <ListOfIcons justify={'flex-end'} languages={languages} />
           </Grid>
         </Grid>
       </Box>
     );
   }
 
-  getMenuItemsOrSandwichIcon(renderMenuSandwich, onSandwichMenuClick) {
+  getMenuItemsOrSandwichIcon(renderMenuSandwich, items, onSandwichMenuClick) {
     if (renderMenuSandwich) {
       return (
         <IconButton onClick={onSandwichMenuClick}>
@@ -44,7 +52,7 @@ class InstitutionalMenu extends Component {
       );
     }
 
-    return <ListOfLinks />;
+    return <ListOfLinks items={items} />;
   }
 }
 
