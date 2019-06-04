@@ -11,7 +11,7 @@ import Box from '@material-ui/core/Box';
 const styles = theme => ({
   badge: {
     top: '32%',
-    right: '3px',
+    right: theme.typography.pxToRem(3),
     // The border color match the background color.
     backgroundColor: '#ff9033',
     fontWeight: 'bold',

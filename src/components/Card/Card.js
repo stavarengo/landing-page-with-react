@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import MuiCard from '@material-ui/core/Card';
 
-const styles = {
+const styles = theme => ({
   root: {
-    border: '1px solid #dae4ee',
+    border: `${theme.typography.pxToRem(1)} solid #dae4ee`,
   },
-};
+});
 
 class Card extends Component {
   render() {

@@ -9,6 +9,7 @@ const styles = theme => ({
   root: {
     backgroundColor: props => props.backgroundColor || Icon.defaultProps.backgroundColor,
     padding: theme.spacing(1.2),
+    display: 'inline-block',
   },
   avatar: {
     borderRadius: 0,

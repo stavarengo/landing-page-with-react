@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import { defineMessages } from 'react-intl.macro';
 import { injectIntl } from 'react-intl';
-import pencilIcon from '../../../../../components/Icon/assets/pencil.svg';
-import { Card, CardHeader, CardContent, CardFooter } from '../../../../../components/Card';
-import Typography from '@material-ui/core/Typography';
+import pencilIcon from '../../../../../../components/Icon/assets/pencil.svg';
+import { Card, CardContent, CardFooter, CardHeader } from '../../../../../../components/Card';
+import { List, ListItem } from '../../../../../../components/List';
 import Box from '@material-ui/core/Box';
+import PostEditor from './components/PostEditor';
+import LastPostPreview from './components/LastPostPreview';
 
 const i18nMsg = defineMessages({
   title: {
@@ -25,9 +27,14 @@ class Microblog extends Component {
       <Card {...other}>
         <CardHeader icon={pencilIcon} title={intl.formatMessage(i18nMsg.title)} />
         <CardContent>
-          <Box height={'43rem'} clone>
-            <Typography variant={'h6'}>Temporary Placeholder</Typography>
-          </Box>
+          <List>
+            <ListItem>
+              <Box mb={5}>
+                <PostEditor />
+              </Box>
+            </ListItem>
+            <LastPostPreview />
+          </List>
         </CardContent>
         <CardFooter text={intl.formatMessage(i18nMsg.footer)} />
       </Card>

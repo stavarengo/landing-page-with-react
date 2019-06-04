@@ -1,32 +1,12 @@
 import React, { Component } from 'react';
-import TextField from '@material-ui/core/TextField';
+import TextField from '../TextField';
 import InputAdornment from '@material-ui/core/InputAdornment';
-import Icon from '../Icon';
-import searchIcon from '../Icon/assets/search.svg';
-import { withStyles } from '@material-ui/styles';
+import Icon from '../../Icon';
+import searchIcon from '../../Icon/assets/search.svg';
 import ButtonBase from '@material-ui/core/ButtonBase';
 import { defineMessages } from 'react-intl.macro';
 import { injectIntl } from 'react-intl';
 import PropTypes from 'prop-types';
-
-const styles = {
-  root: {
-    fontSize: '1.125rem',
-    paddingRight: 0,
-    backgroundColor: '#fff',
-    border: '1px solid #DAE4EE',
-    '& $notchedOutline': {
-      border: 'none',
-    },
-  },
-  notchedOutline: {
-    borderRadius: 0,
-  },
-  input: {
-    paddingTop: 0,
-    paddingBottom: 0,
-  },
-};
 
 const i18nMsg = defineMessages({
   Search: {
@@ -35,7 +15,7 @@ const i18nMsg = defineMessages({
   },
 });
 
-class SearchTextArea extends Component {
+class SearchTextField extends Component {
   static defaultProps = {
     showDefaultPlaceholder: true,
   };
@@ -53,15 +33,12 @@ class SearchTextArea extends Component {
   };
 
   render() {
-    const { showDefaultPlaceholder, IconProps, classes, intl, ...other } = this.props;
+    const { showDefaultPlaceholder, IconProps, intl, ...other } = this.props;
 
     return (
       <TextField
-        variant={'outlined'}
-        margin={'none'}
         placeholder={showDefaultPlaceholder ? intl.formatMessage(i18nMsg.Search) : null}
         InputProps={{
-          classes,
           endAdornment: (
             <InputAdornment
               position={'end'}
@@ -85,4 +62,4 @@ class SearchTextArea extends Component {
   }
 }
 
-export default injectIntl(withStyles(styles)(SearchTextArea));
+export default injectIntl(SearchTextField);

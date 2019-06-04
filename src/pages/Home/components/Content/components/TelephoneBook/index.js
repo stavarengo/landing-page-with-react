@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { withStyles } from '@material-ui/styles';
 import telephoneImage from './assets/telephone.svg';
-import SearchTextArea from '../../../../../../components/SearchTextArea';
+import SearchTextArea from '../../../../../../components/inputs/SearchTextField';
 import { FormattedMessage } from 'react-intl.macro';
 
 const styles = theme => ({
@@ -14,6 +14,7 @@ const styles = theme => ({
     color: '#fff',
     fontWeight: 700,
     padding: theme.spacing(2, 2, 4, 2),
+    marginTop: theme.spacing(2),
   },
   title: {
     fontSize: '1.125rem',

@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import ExpansionPanel from '@material-ui/core/ExpansionPanel';
 
-const styles = {
+const styles = theme => ({
   root: {
-    border: '1px solid #dae4ee',
+    border: `${theme.typography.pxToRem(1)} solid #dae4ee`,
     boxShadow: 'none',
 
     '&:not(:last-child)': {
@@ -22,7 +22,7 @@ const styles = {
     },
   },
   expanded: {},
-};
+});
 
 class Panel extends Component {
   render() {
