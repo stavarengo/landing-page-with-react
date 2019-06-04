@@ -23,7 +23,7 @@ class Home extends Component {
     return (
       <Grid container justify={'center'} {...other}>
         <Grid item xs={12}>
-          <ScreenSize style={{ position: 'fixed', top: '185px', left: '30px', zIndex: 10000000 }} />
+          {/*<ScreenSize style={{ position: 'fixed', top: '185px', left: '30px', zIndex: 10000000 }} />*/}
 
           {renderMenuSandwich && <DrawerMenu open={this.state.isDrawerOpen} onClose={this.onDrawerClose.bind(this)} />}
           <Grid container justify={'center'}>
