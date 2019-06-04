@@ -7,7 +7,7 @@ import clsx from 'clsx';
 
 const styles = theme => ({
   root: {
-    backgroundColor: '#e5f0fa',
+    backgroundColor: props => props.backgroundColor || Icon.defaultProps.backgroundColor,
     padding: theme.spacing(1.2),
   },
   avatar: {
@@ -20,6 +20,7 @@ const styles = theme => ({
 class Icon extends Component {
   static defaultProps = {
     size: 3,
+    backgroundColor: '#e5f0fa',
   };
 
   static propTypes = {
@@ -38,6 +39,10 @@ class Icon extends Component {
      * If null, no Badge will be rendered.
      */
     badgeProps: PropTypes.object,
+    /**
+     * Background color of the search icon.
+     */
+    backgroundColor: PropTypes.string,
   };
 
   render() {

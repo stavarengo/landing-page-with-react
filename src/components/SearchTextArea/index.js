@@ -46,10 +46,14 @@ class SearchTextArea extends Component {
      * If you set a custom placeholder this flag is ignored.
      */
     showDefaultPlaceholder: PropTypes.bool,
+    /**
+     * Properties applied to the {@link Icon} element.
+     */
+    IconProps: PropTypes.object,
   };
 
   render() {
-    const { showDefaultPlaceholder, classes, intl, ...other } = this.props;
+    const { showDefaultPlaceholder, IconProps, classes, intl, ...other } = this.props;
 
     return (
       <TextField
@@ -70,7 +74,7 @@ class SearchTextArea extends Component {
               }}
             >
               <ButtonBase>
-                <Icon icon={searchIcon} />
+                <Icon icon={searchIcon} {...IconProps} />
               </ButtonBase>
             </InputAdornment>
           ),
