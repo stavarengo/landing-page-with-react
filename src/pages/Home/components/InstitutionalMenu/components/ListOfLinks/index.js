@@ -20,7 +20,7 @@ class ListOfLinks extends Component {
       <Grid container spacing={isWidthUp('md', screenWidth) ? 6 : 1} {...other}>
         {allMenuItems(intl).institutionalMenu.map((item, index) => (
           <Grid item xs className={classes.gridItem} key={index}>
-            <ListItem href={item.href}>{item.label}</ListItem>
+            <ListItem to={item.href}>{item.label}</ListItem>
           </Grid>
         ))}
       </Grid>

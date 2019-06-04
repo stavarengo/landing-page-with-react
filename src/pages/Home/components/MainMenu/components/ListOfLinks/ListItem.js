@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Link from '@material-ui/core/Link';
 import { withStyles } from '@material-ui/styles';
 import clsx from 'clsx';
+import Link from '../../../../../../components/Link';
 
 const styles = theme => ({
   root: {

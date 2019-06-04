@@ -5,8 +5,8 @@ import { ListItem, ListItemAvatarImg, ListItemText } from '../../../../../../../
 import favoriteIcon from '../../../../../../../../components/assets/favorites.png';
 import service from './services';
 import ListItemSecondaryAction from '@material-ui/core/ListItemSecondaryAction';
-import Link from '@material-ui/core/Link';
 import { withStyles } from '@material-ui/styles';
+import Link from '../../../../../../../../components/Link';
 
 const styles = theme => ({
   secondaryActions: {
@@ -55,7 +55,7 @@ class LastPostPreview extends Component {
         <ListItem>
           <ListItemText
             primary={
-              <Link color={'inherit'} href={'#'}>
+              <Link color={'inherit'} to={'#'}>
                 <FormattedMessage
                   id={'HomeContent_Microblog_Reaction'}
                   defaultMessage={'Read more and reactions ({number})'}

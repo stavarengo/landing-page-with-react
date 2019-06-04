@@ -9,6 +9,7 @@ import Divider from '@material-ui/core/Divider';
 import List from '@material-ui/core/List';
 import Box from '@material-ui/core/Box';
 import PropTypes from 'prop-types';
+import Link from '../../../components/Link';
 
 const styles = {
   list: {
@@ -33,7 +34,13 @@ class DrawerMenu extends Component {
           <List>
             {allMenuItems(intl).mainMenu.map((item, index) => (
               <ListItem button key={index}>
-                <ListItemText primary={item.label} />
+                <ListItemText
+                  primary={
+                    <Link color={'inherit'} to={item.href}>
+                      {item.label}
+                    </Link>
+                  }
+                />
               </ListItem>
             ))}
           </List>
@@ -43,7 +50,13 @@ class DrawerMenu extends Component {
           <List>
             {allMenuItems(intl).institutionalMenu.map((item, index) => (
               <ListItem button key={index}>
-                <ListItemText secondary={item.label} />
+                <ListItemText
+                  secondary={
+                    <Link color={'inherit'} to={item.href}>
+                      {item.label}
+                    </Link>
+                  }
+                />
               </ListItem>
             ))}
           </List>
