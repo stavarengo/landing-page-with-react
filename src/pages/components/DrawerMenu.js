@@ -3,13 +3,13 @@ import { withStyles } from '@material-ui/styles';
 import Drawer from '@material-ui/core/Drawer';
 import ListItemText from '@material-ui/core/ListItemText';
 import ListItem from '@material-ui/core/ListItem';
-import allMenuItems from '../services/allMenuItems';
+import allMenuItems from './services/allMenuItems';
 import { injectIntl } from 'react-intl';
 import Divider from '@material-ui/core/Divider';
 import List from '@material-ui/core/List';
 import Box from '@material-ui/core/Box';
 import PropTypes from 'prop-types';
-import Link from '../../../components/Link';
+import Link from '../../components/Link';
 
 const styles = {
   list: {

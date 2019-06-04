@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { withStyles } from '@material-ui/styles';
 import Grid from '@material-ui/core/Grid';
-import blackSettingsButton from '../../../../../../components/Icon/assets/blackSettingsButton.svg';
-import notificationBell from '../../../../../../components/Icon/assets/notificationBell.svg';
+import blackSettingsButton from '../../../../../components/Icon/assets/blackSettingsButton.svg';
+import notificationBell from '../../../../../components/Icon/assets/notificationBell.svg';
 import withWidth, { isWidthUp } from '@material-ui/core/withWidth/withWidth';
-import Icon from '../../../../../../components/Icon';
+import Icon from '../../../../../components/Icon';
 import ButtonBase from '@material-ui/core/ButtonBase';
 import Box from '@material-ui/core/Box';
 import Link from '@material-ui/core/Link';

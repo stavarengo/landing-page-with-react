@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Grid from '@material-ui/core/Grid';
-import LogoWithNameAndSlogan from '../../../../components/companyLogo/LogoWithNameAndSlogan';
+import LogoWithNameAndSlogan from '../../../components/companyLogo/LogoWithNameAndSlogan';
 import { FormattedMessage } from 'react-intl.macro';
 import { withStyles } from '@material-ui/styles';
 

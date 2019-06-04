@@ -5,7 +5,7 @@ import clsx from 'clsx';
 import { withStyles } from '@material-ui/styles';
 import PropTypes from 'prop-types';
 import withWidth, { isWidthUp } from '@material-ui/core/withWidth/withWidth';
-import SearchTextArea from '../../../../components/inputs/SearchTextField';
+import SearchTextArea from '../../../components/inputs/SearchTextField';
 
 const styles = {
   root: {

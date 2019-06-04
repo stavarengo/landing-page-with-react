@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import InstitutionalMenu from './components/InstitutionalMenu';
+import InstitutionalMenu from '../components/InstitutionalMenu';
 import Grid from '@material-ui/core/Grid';
-import SectionBetweenInstitutionalMenuAndTheMainMenu from './components/SectionBetweenInstitutionalMenuAndTheMainMenu';
-import MainMenu from './components/MainMenu';
+import SectionBetweenInstitutionalMenuAndTheMainMenu from '../components/SectionBetweenInstitutionalMenuAndTheMainMenu';
+import MainMenu from '../components/MainMenu';
 import Box from '@material-ui/core/Box';
-import DrawerMenu from './components/DrawerMenu';
+import DrawerMenu from '../components/DrawerMenu';
 import { isWidthDown } from '@material-ui/core/withWidth';
 import withWidth from '@material-ui/core/withWidth';
 import Content from './components/Content';

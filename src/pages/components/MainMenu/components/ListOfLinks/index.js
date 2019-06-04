@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { withStyles } from '@material-ui/styles';
 import Grid from '@material-ui/core/Grid';
 import ListItem from './ListItem';
-import allMenuItems from '../../../../services/allMenuItems';
+import allMenuItems from '../../../services/allMenuItems';
 import { injectIntl } from 'react-intl';
 
 const styles = {

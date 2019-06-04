@@ -3,7 +3,7 @@ import { withStyles } from '@material-ui/styles';
 import Grid from '@material-ui/core/Grid';
 import withWidth, { isWidthUp } from '@material-ui/core/withWidth/withWidth';
 import ListItem from './ListItem';
-import allMenuItems from '../../../../services/allMenuItems';
+import allMenuItems from '../../../services/allMenuItems';
 import { injectIntl } from 'react-intl';
 
 const styles = {
