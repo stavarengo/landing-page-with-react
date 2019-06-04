@@ -74,7 +74,7 @@ class Home extends Component {
                 items={renderMenuSandwich ? null : institutionalMenuItems}
               />
               <Box my={3} px={1}>
-                <SectionBetweenInstitutionalMenuAndTheMainMenu />
+                <SectionBetweenInstitutionalMenuAndTheMainMenu href={matchUrl} />
               </Box>
             </Grid>
           </Grid>

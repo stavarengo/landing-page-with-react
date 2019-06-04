@@ -15,7 +15,7 @@ export default class Accordion extends Component {
      * When it is a number, it means the index of the panel expanded.
      * When it is false, it means no panel is expanded.
      */
-    expanded: false,
+    expanded: 0,
   };
 
   static propTypes = {
@@ -40,10 +40,7 @@ export default class Accordion extends Component {
   render() {
     const { panels, startOpened, ...other } = this.props;
 
-    let expanded = 0;
-    if (this.state.expanded !== false) {
-      expanded = this.state.expanded;
-    }
+    let expanded = this.state.expanded;
 
     return (
       <div {...other}>
@@ -58,13 +55,6 @@ export default class Accordion extends Component {
   }
 
   handleChange = panel => (event, isExpanded) => {
-    if (!isExpanded && panel === this.state.expanded) {
-      // The user is trying to close the current panel.
-      // For now, this component does not allows to close all the panels.
-      // It must always have one panel opened.
-      return;
-    }
-
     this.setState({ expanded: isExpanded ? panel : false });
   };
 }
