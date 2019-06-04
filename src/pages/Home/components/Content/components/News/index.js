@@ -8,7 +8,7 @@ import service from './services';
 import Divider from '@material-ui/core/Divider';
 import Box from '@material-ui/core/Box';
 import ListItemSecondaryAction from '@material-ui/core/ListItemSecondaryAction';
-import favoritePng from './assets/favorites.png';
+import favoritePng from '../../../../../../components/assets/favorites.png';
 
 const i18nMsg = defineMessages({
   title: {
