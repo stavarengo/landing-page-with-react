@@ -25,7 +25,7 @@ class InstitutionalMenu extends Component {
     /**
      * List of items to display in the menu.
      */
-    items: PropTypes.arrayOf(PropTypes.object).isRequired,
+    items: PropTypes.arrayOf(PropTypes.object),
   };
 
   render() {

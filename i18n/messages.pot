@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2019-06-04T18:09:08.740Z\n"
+"POT-Creation-Date: 2019-06-04T22:42:04.710Z\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "MIME-Version: 1.0\n"
@@ -83,6 +83,14 @@ msgctxt "Institutional.Menu2"
 msgid "Contact"
 msgstr ""
 
+#: i18n/src/pages/Contact/index.json
+#. [ContactPage_Title]
+#. defaultMessage is:
+#. Contact Page
+msgctxt "ContactPage_Title"
+msgid "Contact Page"
+msgstr ""
+
 #: i18n/src/components/companyLogo/LogoWithNameAndSlogan/index.json
 #. [companyName]
 #. defaultMessage is:
@@ -113,6 +121,14 @@ msgstr ""
 #. Directly To
 msgctxt "HomeContent_DirectlyTo_Title"
 msgid "Directly To"
+msgstr ""
+
+#: i18n/src/pages/Contact/index.json
+#. [ContactPage_InputLabel_Email]
+#. defaultMessage is:
+#. Email: *
+msgctxt "ContactPage_InputLabel_Email"
+msgid "Email: *"
 msgstr ""
 
 #: i18n/src/pages/components/services/allMenuItems.json
@@ -169,6 +185,14 @@ msgstr ""
 #. Intranet
 msgctxt "Intranet"
 msgid "Intranet"
+msgstr ""
+
+#: i18n/src/pages/Contact/index.json
+#. [ContactPage_InputLabel_Message]
+#. defaultMessage is:
+#. Message: *
+msgctxt "ContactPage_InputLabel_Message"
+msgid "Message: *"
 msgstr ""
 
 #: i18n/src/pages/components/services/allMenuItems.json
@@ -233,6 +257,14 @@ msgstr ""
 #. My Links
 msgctxt "HomeContent_MyLinks_Title"
 msgid "My Links"
+msgstr ""
+
+#: i18n/src/pages/Contact/index.json
+#. [ContactPage_InputLabel_Name]
+#. defaultMessage is:
+#. Name: *
+msgctxt "ContactPage_InputLabel_Name"
+msgid "Name: *"
 msgstr ""
 
 #: i18n/src/pages/components/services/allMenuItems.json
@@ -307,6 +339,14 @@ msgctxt "Search"
 msgid "Search..."
 msgstr ""
 
+#: i18n/src/pages/Contact/index.json
+#. [ContactPage_Button_Send]
+#. defaultMessage is:
+#. Send
+msgctxt "ContactPage_Button_Send"
+msgid "Send"
+msgstr ""
+
 #: i18n/src/pages/Home/components/Microblog/index.json
 #. [HomeContent_Microblog_Footer]
 #. defaultMessage is:
@@ -315,12 +355,28 @@ msgctxt "HomeContent_Microblog_Footer"
 msgid "Show more"
 msgstr ""
 
+#: i18n/src/pages/Contact/index.json
+#. [ContactPage_InputLabel_Subject]
+#. defaultMessage is:
+#. Subject: *
+msgctxt "ContactPage_InputLabel_Subject"
+msgid "Subject: *"
+msgstr ""
+
 #: i18n/src/pages/Home/components/TelephoneBook/index.json
 #. [HomeContent_TelephoneBook_Title]
 #. defaultMessage is:
 #. Telephone Book
 msgctxt "HomeContent_TelephoneBook_Title"
 msgid "Telephone Book"
+msgstr ""
+
+#: i18n/src/pages/Contact/index.json
+#. [ContactPage_InputHelpText_Require]
+#. defaultMessage is:
+#. This field is required.
+msgctxt "ContactPage_InputHelpText_Require"
+msgid "This field is required."
 msgstr ""
 
 #: i18n/src/pages/Home/components/QualityManual/index.json

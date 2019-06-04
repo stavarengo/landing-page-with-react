@@ -1,42 +1,21 @@
 import React, { Component } from 'react';
-import MuiTextField from '@material-ui/core/TextField';
+import BaseTextField from '../BaseTextField';
+import { injectIntl } from 'react-intl';
 import { withStyles } from '@material-ui/styles';
 
 const styles = theme => ({
-  root: {
-    fontSize: '1.125rem',
-    paddingRight: 0,
-    backgroundColor: '#fff',
-    border: `${theme.typography.pxToRem(1)} solid #DAE4EE`,
-    '& $notchedOutline': {
-      border: 'none',
-    },
-  },
-  notchedOutline: {
-    //   borderRadius: 0,
-  },
   input: {
-    paddingTop: 0,
-    paddingBottom: 0,
+    paddingTop: theme.typography.pxToRem(10),
+    paddingBottom: theme.typography.pxToRem(10),
   },
 });
 
 class TextField extends Component {
   render() {
-    const { classes, InputProps, ...other } = this.props;
+    const { classes, ...other } = this.props;
 
-    return (
-      <MuiTextField
-        variant={'outlined'}
-        margin={'none'}
-        InputProps={{
-          classes,
-          ...InputProps,
-        }}
-        {...other}
-      />
-    );
+    return <BaseTextField classes={classes} {...other} />;
   }
 }
 
-export default withStyles(styles)(TextField);
+export default withStyles(styles)(injectIntl(TextField));

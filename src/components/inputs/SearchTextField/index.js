@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import TextField from '../TextField';
+import TextField from '../BaseTextField';
 import InputAdornment from '@material-ui/core/InputAdornment';
 import Icon from '../../Icon';
 import searchIcon from '../../Icon/assets/search.svg';

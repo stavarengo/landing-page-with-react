@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2019-06-04T18:09:08.740Z\n"
+"POT-Creation-Date: 2019-06-04T22:42:04.710Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -87,6 +87,14 @@ msgctxt "Institutional.Menu2"
 msgid "Contact"
 msgstr "Contact"
 
+#. [ContactPage_Title]
+#. defaultMessage is:
+#. Contact Page
+#: i18n/src/pages/Contact/index.json
+msgctxt "ContactPage_Title"
+msgid "Contact Page"
+msgstr "Contact Pagina"
+
 #. [companyName]
 #. defaultMessage is:
 #. CuraNu
@@ -118,6 +126,14 @@ msgstr "CuraNu - Zorg en welzijn"
 msgctxt "HomeContent_DirectlyTo_Title"
 msgid "Directly To"
 msgstr "Direct Naar"
+
+#. [ContactPage_InputLabel_Email]
+#. defaultMessage is:
+#. Email: *
+#: i18n/src/pages/Contact/index.json
+msgctxt "ContactPage_InputLabel_Email"
+msgid "Email: *"
+msgstr "Email: *"
 
 #. [MainMenu.Menu3]
 #. defaultMessage is:
@@ -174,6 +190,14 @@ msgstr "Groepen"
 msgctxt "Intranet"
 msgid "Intranet"
 msgstr "Intranet"
+
+#. [ContactPage_InputLabel_Message]
+#. defaultMessage is:
+#. Message: *
+#: i18n/src/pages/Contact/index.json
+msgctxt "ContactPage_InputLabel_Message"
+msgid "Message: *"
+msgstr "Bericht: *"
 
 #. [Institutional.Menu5]
 #. defaultMessage is:
@@ -238,6 +262,14 @@ msgstr "Mijn Groepen"
 msgctxt "HomeContent_MyLinks_Title"
 msgid "My Links"
 msgstr "Mijn Links"
+
+#. [ContactPage_InputLabel_Name]
+#. defaultMessage is:
+#. Name: *
+#: i18n/src/pages/Contact/index.json
+msgctxt "ContactPage_InputLabel_Name"
+msgid "Name: *"
+msgstr "Naam: *"
 
 #. [MainMenu.Menu2]
 #. defaultMessage is:
@@ -311,6 +343,14 @@ msgctxt "Search"
 msgid "Search..."
 msgstr "Zoeken..."
 
+#. [ContactPage_Button_Send]
+#. defaultMessage is:
+#. Send
+#: i18n/src/pages/Contact/index.json
+msgctxt "ContactPage_Button_Send"
+msgid "Send"
+msgstr "Verstuur"
+
 #. [HomeContent_Microblog_Footer]
 #. defaultMessage is:
 #. Show more
@@ -319,6 +359,14 @@ msgctxt "HomeContent_Microblog_Footer"
 msgid "Show more"
 msgstr "Toon meer"
 
+#. [ContactPage_InputLabel_Subject]
+#. defaultMessage is:
+#. Subject: *
+#: i18n/src/pages/Contact/index.json
+msgctxt "ContactPage_InputLabel_Subject"
+msgid "Subject: *"
+msgstr "Onderwerp: *"
+
 #. [HomeContent_TelephoneBook_Title]
 #. defaultMessage is:
 #. Telephone Book
@@ -326,6 +374,14 @@ msgstr "Toon meer"
 msgctxt "HomeContent_TelephoneBook_Title"
 msgid "Telephone Book"
 msgstr "Telefoonboek"
+
+#. [ContactPage_InputHelpText_Require]
+#. defaultMessage is:
+#. This field is required.
+#: i18n/src/pages/Contact/index.json
+msgctxt "ContactPage_InputHelpText_Require"
+msgid "This field is required."
+msgstr "Dit veld is verplicht."
 
 #. [HomeContent_QualityManual_Footer]
 #. defaultMessage is:

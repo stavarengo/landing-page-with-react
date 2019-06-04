@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { FormattedMessage } from 'react-intl.macro';
-import TextField from '../../../../../../components/inputs/TextField';
+import TextField from '../../../../../../components/inputs/BaseTextField';
 import Button from '../../../../../../components/inputs/Button';
 import Grid from '@material-ui/core/Grid';
 import cameraIcon from './assets/camera.png';
