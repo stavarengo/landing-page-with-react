@@ -7,8 +7,18 @@ import withWidth, { isWidthUp } from '@material-ui/core/withWidth/withWidth';
 import Icon from '../../../../../../components/Icon';
 import ButtonBase from '@material-ui/core/ButtonBase';
 import Box from '@material-ui/core/Box';
+import Link from '@material-ui/core/Link';
 
 const styles = theme => ({
+  languages: {
+    marginRight: theme.spacing(2),
+
+    '& :not(:last-child)': {
+      marginRight: theme.spacing(0.5),
+      paddingRight: theme.spacing(0.5),
+      borderRight: `${theme.typography.pxToRem(1)} solid ${theme.palette.divider}`,
+    },
+  },
   badge: {
     top: '32%',
     right: theme.typography.pxToRem(3),
@@ -26,7 +36,15 @@ class ListOfIcons extends Component {
     const { classes, width: screenWidth, ...other } = this.props;
 
     return (
-      <Grid container {...other}>
+      <Grid container {...other} alignItems={'center'}>
+        <Grid item className={classes.languages}>
+          <Link color={'inherit'} href={'/'}>
+            EN
+          </Link>
+          <Link color={'inherit'} href={'/nl'}>
+            NL
+          </Link>
+        </Grid>
         <Grid item>
           <ButtonBase>
             <Icon icon={blackSettingsButton} size={4} />
