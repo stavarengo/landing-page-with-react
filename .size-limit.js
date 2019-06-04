@@ -10,6 +10,7 @@ module.exports = [
     limit: '15 KB',
     webpack: false,
     gzip: true,
+    running: false,
   },
 ];
 
@@ -21,5 +22,6 @@ fs.readdirSync(jsBundlesDir)
       limit: '99 KB',
       webpack: false,
       gzip: true,
+      running: false,
     });
   });

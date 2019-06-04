@@ -1,3 +1,3 @@
 export default function() {
-  return [{ label: 'EN', url: '' }, { label: 'NL', url: 'nl' }];
+  return [{ label: 'EN', url: 'en' }, { label: 'NL', url: 'nl' }];
 }

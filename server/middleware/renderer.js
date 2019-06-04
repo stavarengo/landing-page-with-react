@@ -58,11 +58,20 @@ export default (req, res, next) => {
   let langMatches;
   if (req.baseUrl && (langMatches = req.baseUrl.match(/^\/(..)(\/.+$|$)/))) {
     let langMatch = langMatches[1];
+    let requestedLangFromUrl;
     const normalizedLanguageParameter = reactIntlSetup.normalizeLanguage(langMatch);
     if (allSupportedLanguages.indexOf(normalizedLanguageParameter) > -1) {
-      requestedLanguage = normalizedLanguageParameter;
+      requestedLangFromUrl = normalizedLanguageParameter;
     } else if (allSupportedLanguages.indexOf(reactIntlSetup.getPrimaryLanguage(normalizedLanguageParameter)) > -1) {
-      requestedLanguage = reactIntlSetup.getPrimaryLanguage(normalizedLanguageParameter);
+      requestedLangFromUrl = reactIntlSetup.getPrimaryLanguage(normalizedLanguageParameter);
+    }
+
+    if (requestedLangFromUrl) {
+      if (requestedLangFromUrl === requestedLanguage) {
+        res.redirect('/');
+        return;
+      }
+      requestedLanguage = requestedLangFromUrl;
     }
   }
 

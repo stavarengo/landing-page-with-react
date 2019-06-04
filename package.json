@@ -29,6 +29,7 @@
     "extract:po": "react-intl-po po2json 'i18n/**/*.po' -c 'id' -m 'i18n/src/**/*.json' -o 'i18n'",
     "start-express-ssr": "NODE_ICU_DATA=node_modules/full-icu nodemon --watch server --watch src --exec 'npm run build && node $NODE_DEBUG_OPTION server/bootstrap.js'",
     "start-express-ssr-without-build-client": "NODE_ICU_DATA=node_modules/full-icu nodemon --watch server --watch src server/bootstrap.js",
+    "start-express-ssr-without-build-client-no-nodemon": "NODE_ICU_DATA=node_modules/full-icu node server/bootstrap.js",
     "size": "size-limit",
     "start": "react-scripts start",
     "build": "react-scripts build",
