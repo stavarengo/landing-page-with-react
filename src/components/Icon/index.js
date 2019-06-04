@@ -47,7 +47,7 @@ class Icon extends Component {
   };
 
   render() {
-    const { classes, className, icon, badgeProps, ...other } = this.props;
+    const { classes, className, icon, backgroundColor, badgeProps, ...other } = this.props;
 
     let badge = this.getBadge(<Avatar className={classes.avatar} src={icon} />, badgeProps);
 

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import InstitutionalMenu from './components/InstitutionalMenu';
-import ScreenSize from '../../components/dev/ScreenSize';
 import Grid from '@material-ui/core/Grid';
 import SectionBetweenInstitutionalMenuAndTheMainMenu from './components/SectionBetweenInstitutionalMenuAndTheMainMenu';
 import MainMenu from './components/MainMenu';

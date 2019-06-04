@@ -22,7 +22,7 @@ class ListItemAvatarBase extends Component {
   };
 
   render() {
-    const { children, classes, ...other } = this.props;
+    const { children, classes, marginRight, ...other } = this.props;
 
     return (
       <MuiListItemAvatar classes={classes} {...other}>
