@@ -25,6 +25,12 @@ const i18nMsg = defineMessages({
     defaultMessage: '%s - CuraNu',
     description: "Template for the HTML document title that will appears in the browser's tab.",
   },
+  MetaTagDescription: {
+    id: 'App.MetaTagDescription',
+    defaultMessage:
+      'Example of a fully functional landing page made with React + Router + Material UI. This website support Server Side Rendering (SSR) + Internationalized Routes + Stylized Material UI components (it does not look like Google App).',
+    description: 'Value of the meta tag description. This is for SEO.',
+  },
 });
 
 const AsyncPage = Loadable({
@@ -60,6 +66,7 @@ const App = injectIntl(
               titleTemplate={this.props.intl.formatMessage(i18nMsg.DocumentTitleTemplate)}
             >
               <html lang={this.props.intl.locale} />
+              <meta name="description" content={this.props.intl.formatMessage(i18nMsg.MetaTagDescription)} />
             </Helmet>
             <Switch>
               <Route

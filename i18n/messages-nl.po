@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2019-06-04T22:42:04.710Z\n"
+"POT-Creation-Date: 2019-06-05T01:15:41.032Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -150,6 +150,22 @@ msgstr "Evenementen"
 msgctxt "HomeContent_Events_Title"
 msgid "Events"
 msgstr "Evenementen"
+
+#. [App.MetaTagDescription] - Value of the meta tag description. This is for SEO.
+#. defaultMessage is:
+#. Example of a fully functional landing page made with React + Router + Material UI. This website support Server Side Rendering (SSR) + Internationalized Routes + Stylized Material UI components (it does not look like Google App).
+#: i18n/src/App.json
+msgctxt "App.MetaTagDescription"
+msgid ""
+"Example of a fully functional landing page made with React + Router + "
+"Material UI. This website support Server Side Rendering (SSR) + "
+"Internationalized Routes + Stylized Material UI components (it does not look "
+"like Google App)."
+msgstr ""
+"Voorbeeld van een volledig functionele bestemmingspagina gemaakt met React + "
+"Router + Materiaal UI. Deze website ondersteunt Server Side Rendering (SSR) "
+"+ geïnternationaliseerde routes + gestileerde materiaal UI-componenten (het "
+"ziet er niet als Google-app uit)."
 
 #. [Institutional.Menu3]
 #. defaultMessage is:

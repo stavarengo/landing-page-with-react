@@ -25,15 +25,23 @@ const styles = theme => ({
 });
 
 class Footer extends Component {
+  static defaultProps = {
+    icon: arrowRightIcon,
+  };
+
   static propTypes = {
     /**
-     * The header's title.
+     * The footer text.
      */
     text: PropTypes.string.isRequired,
+    /**
+     * The icon of the footer.
+     */
+    icon: PropTypes.string,
   };
 
   render() {
-    const { text, classes, ...other } = this.props;
+    const { icon, text, classes, ...other } = this.props;
 
     return (
       <Grid container alignItems={'stretch'} {...other} className={classes.root}>
@@ -47,7 +55,7 @@ class Footer extends Component {
         <Grid item>
           <ButtonBase>
             <Typography noWrap component={'div'}>
-              <Icon icon={arrowRightIcon} className={classes.icon} />
+              <Icon icon={icon} className={classes.icon} />
             </Typography>
           </ButtonBase>
         </Grid>

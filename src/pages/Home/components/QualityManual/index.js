@@ -34,7 +34,7 @@ class QualityManual extends Component {
                 <ListItem>
                   <ListItemText
                     primary={item.description}
-                    secondary={intl.formatMessage(i18nMsg.updatedDate, { date: item.date })}
+                    secondary={<i>{intl.formatMessage(i18nMsg.updatedDate, { date: item.date })}</i>}
                   />
                 </ListItem>
                 {index < allItems.length - 1 && <Divider component="li" />}

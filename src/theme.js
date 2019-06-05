@@ -12,6 +12,9 @@ const theme = createMuiTheme({
     },
   },
   palette: {
+    background: {
+      default: '#fff',
+    },
     divider: '#dae4ee',
     text: {
       primary: '#657189',
