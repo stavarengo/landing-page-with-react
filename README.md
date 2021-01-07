@@ -1,7 +1,7 @@
 # Landing Page With React
 
 ## See it live
-If you want to see it live, go to: [Dutch](http://landing-page-with-react.stavarengo.com/nl) or [English](http://landing-page-with-react.stavarengo.com/en).
+If you want to see it live, go to: [Dutch](http://landing-page-with-react.stavarengo.me/nl) or [English](http://landing-page-with-react.stavarengo.me/en).
 
 ## Run locally
 
